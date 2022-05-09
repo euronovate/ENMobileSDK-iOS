@@ -70,6 +70,20 @@ If you set it to `false`, they will be saved in `documents directory`.
 	
 This builder returns an instance of `ENMobileSDK`, however you can also access to it's instance through `shared` instance.
 
+### ENLanguage
+The sdk implements a multi-language system. It saves the last choice, and keeps it in memory until next install.
+
+```swift
+public enum ENLanguage: String {
+ case it = "it"
+ case en = "en"
+ case gr = "gr"
+ case es = "es"
+}
+```
+
+The requested languages are configurable in `ENMobileSDKConfig`. It requires an array of ENLanguages, and if there's not an already saved choice, it chooses the **first language in the array**.
+
 ### ENAuthenticables
 
 ```swift
