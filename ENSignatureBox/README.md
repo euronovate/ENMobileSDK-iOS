@@ -1,10 +1,13 @@
 ## ENSignatureBox
-![](https://badgen.net/badge/stable/1.0.0/blue)
+
+![](https://badgen.net/badge/stable/1.0.1/blue)
 
 ## COCOAPODS
+
 Add `pod 'ENSignatureBox'` to your **PodFile**
 
 ## Basic usage
+
 This modules let you draw on a canvas your signature with either pen or finger. The signatureBoxConfig is declared as below:
 
 ```swift
@@ -25,10 +28,10 @@ public struct ENSignatureBoxConfig {
 }
 ```
 
-- `signatureSourceType` defines which source is available for the signature, if `finger`,  `Apple Pencil` or `Any`.
+- `signatureSourceType` defines which source is available for the signature, if `finger`, `Apple Pencil` or `Any`.
 - `signatureImageConfig` is defined as follows:
 
-```swift      
+```swift
 public enum ENSignatureImageConfig {
 	case justSignature
 	case signatureAndSignerName
@@ -39,7 +42,8 @@ public enum ENSignatureImageConfig {
 
 Depending on what you choose, you can see more or less details in rendered signature on the document.
 
-- `signatureContentMode`: 
+- `signatureContentMode`:
+
 ```swift
 public enum ENSignatureContentMode {
 	case ignoreFieldRatio

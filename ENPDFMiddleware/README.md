@@ -1,16 +1,19 @@
 ## ENPDFMiddleware
-![](https://badgen.net/badge/stable/1.0.0/blue)
+
+![](https://badgen.net/badge/stable/1.0.1/blue)
 
 ## COCOAPODS
+
 Add `pod 'ENPDFMiddleware'` to your **PodFile**
 
 ## Basic usage
-As the name suggests, it's a middleware between local and online PDF management. Every PDF request passes here, and then it decides to pass it through [ENSoftServer module](ENSoftServer/README.md) or locally to [ENPDFProcessor module](ENPDFProcessor/README.md). Either if you request your pdf locally or from the server, you'll receive the same `PDFContainer`, which has every information required to show your PDF.
 
+As the name suggests, it's a middleware between local and online PDF management. Every PDF request passes here, and then it decides to pass it through [ENSoftServer module](ENSoftServer/README.md) or locally to [ENPDFProcessor module](ENPDFProcessor/README.md). Either if you request your pdf locally or from the server, you'll receive the same `PDFContainer`, which has every information required to show your PDF.
 
 Depending on the pdf source, you can call:
 
 ### PDF saved locally (through [ENPDFProcessor](ENPDFProcessor/README.md))
+
 ```swift
 public func openDocument(fromLocalSourceType localSourceType: LocalSourceType, fileName: String, completion: @escaping (ENResponse<PDFContainer>) -> Void) {
 ```
@@ -27,6 +30,7 @@ public enum LocalSourceType {
 This enum asks if the pdf is already in a writable location (for instance in `FileManager`), or in an unwritable location (available in `Bundle`). In the second case, to let the SDK to write and update the PDF, it's copied in a `FileManager` directory.
 
 ### PDF from GUID (through [ENSoftServer](ENSoftServer/README.md))
+
 ```swift
 public func openDocument(fromGuid guid: String, completion: @escaping (ENResponse<PDFContainer>) -> Void) {
 ```

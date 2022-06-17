@@ -1,14 +1,16 @@
 ## ENPubSub
-![](https://badgen.net/badge/stable/1.0.0/blue)
+
+![](https://badgen.net/badge/stable/1.0.1/blue)
 
 ## COCOAPODS
+
 Add `pod 'ENPubSub'` to your **PodFile**
 
 PubSub system communication to let sign or make other actions in realtime.
 
 ## Basic usage
 
-The only one parameter extends the protocol *PubSubConfig*:
+The only one parameter extends the protocol _PubSubConfig_:
 
 ```swift
 public protocol ENPubSubConfig: Settingable {
@@ -23,7 +25,7 @@ public protocol ENPubSubConfig: Settingable {
 You can choose `DefaultPubSubConfig` for convention.
 
 ```swift
-      
+
 
 public struct DefaultPubSubConfig: ENPubSubConfig {
 	 public var url: String
@@ -52,4 +54,3 @@ public protocol ENPubSubDelegate: AnyObject {
  func didReceive(message: [String: Any])
 }
 ```
-

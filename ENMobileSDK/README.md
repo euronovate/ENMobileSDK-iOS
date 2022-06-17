@@ -1,39 +1,41 @@
 ## ENMobileSDK (conventionally ENCore)
-![](https://badgen.net/badge/stable/1.0.0/blue)
+
+![](https://badgen.net/badge/stable/1.0.1/blue)
 
 It's the core module. This module is included in every submodule, and keeps common functions to avoid circular dependencies between them. So it's not necessary to add to every module.
 
 ## COCOAPODS
+
 Add `pod 'ENMobileSDK'` to your **PodFile**
 
 ## Basic usage
 
 This SDK is builder-oriented, so every step is linked to previous and next, without possibility to shuffle them. You can find optional fields, but when something is required, is necessary to go on.
 
-Below a basic setup (without any module). As you'll see, there's a function which requires an `ENAuthenticable` entity. These entities are the modules required in your application. Any of them has it's own builder with them configs and setups. Here you can see the `async/await` for the builder, but you can also call the *old one* with completion at the end.
+Below a basic setup (without any module). As you'll see, there's a function which requires an `ENAuthenticable` entity. These entities are the modules required in your application. Any of them has it's own builder with them configs and setups. Here you can see the `async/await` for the builder, but you can also call the _old one_ with completion at the end.
 
 ```swift
 Task {
     let mobileSDK = await ENMobileSDK
         .with(
             enAuthConfig: ENAuthConfig(
-                baseUrl: baseUrl, 
-                license: licenseKey, 
-                username: username, 
+                baseUrl: baseUrl,
+                license: licenseKey,
+                username: username,
                 password: password
                 ),
             enMobileSDKConfig: ENMobileSDKConfig(
-                skipSSL: true, 
-                oAuth2: nil, 
+                skipSSL: true,
+                oAuth2: nil,
                 enabledLanguages: [.en]))
 		.with(enTheme: nil)
         .with(certificateOwnerInfo: ENCertificateOwnerInfo())
         .with(
-            logLevel: .verbose, 
+            logLevel: .verbose,
             logServerConfig: ENLogServerConfig(
-                baseURL: "baseurl", 
-                licenseCode: "licenseCode", 
-                userID: "userID"), 
+                baseURL: "baseurl",
+                licenseCode: "licenseCode",
+                userID: "userID"),
             saveLogsIniCloud: false)
         .with { initCallback in
             switch initCallback {
@@ -56,21 +58,23 @@ Task {
 ```
 
 ### Logs
+
 As you can see, there's a log section config, where you can set `logLevel`, `logServerConfig` (which sends most important logs to server setupped in baseURL), and a flag `saveLogsIniCloud`.
+
 ##### Logs accessibility
+
 This last one, let's you save your logs directly on iCloud logs, so that you can easily check them and eventually send them to our team.
 If you set it to `false`, they will be saved in `documents directory`.
+
 - You set **true**:
-	If you set true to this flag, to be able to see them in iCloud Drive directory, you have to:
-		- Create an **iCloud Container** in Developer Apple Portal.
-		- Add iCloud Capability in your app's Target, select iCloud Documents and select the container you've previously created.
-		- Now if you build your app on a device with iCloud enabled, you should see a directory with your name's app in iCloud Drive.
+  If you set true to this flag, to be able to see them in iCloud Drive directory, you have to: - Create an **iCloud Container** in Developer Apple Portal. - Add iCloud Capability in your app's Target, select iCloud Documents and select the container you've previously created. - Now if you build your app on a device with iCloud enabled, you should see a directory with your name's app in iCloud Drive.
 - You set **false**:
-	If you set false to this flag, logs are saved in `documents` folder, and if you add `Application supports iTunes file sharing` => `TRUE` to your plist file, you can access to your logs directly to Finder's device window if connected to your Mac. If your PC is Windows, you see them into iTunes App.
-	
+  If you set false to this flag, logs are saved in `documents` folder, and if you add `Application supports iTunes file sharing` => `TRUE` to your plist file, you can access to your logs directly to Finder's device window if connected to your Mac. If your PC is Windows, you see them into iTunes App.
+
 This builder returns an instance of `ENMobileSDK`, however you can also access to it's instance through `shared` instance.
 
 ### ENLanguage
+
 The sdk implements a multi-language system. It saves the last choice, and keeps it in memory until next install.
 
 ```swift
@@ -109,9 +113,10 @@ You'll se 2 different builder declarations for Authenticable:
 ```
 
 The first one is used for the first authenticables you build, the last one is necessary for the last one, so that you can go on building your `ENMobileSDK`.
-## Theme
-To give an universal style to every module, we defined the `ENTheme` protocol. It contains variable which every module uses to define color, font or sizes for their graphic components.
 
+## Theme
+
+To give an universal style to every module, we defined the `ENTheme` protocol. It contains variable which every module uses to define color, font or sizes for their graphic components.
 
 If you want to create your own theme, just create a struct/class which extends this protocol:
 
@@ -126,7 +131,8 @@ public protocol ENTheme {
 
 Every variable is another protocol, which requires variables necessary to render our views from your theme.
 
-#### SignatureBox theme 
+#### SignatureBox theme
+
 ```swift
 public protocol ENSignatureBoxTheme {
 	var signatureBox: BackgroundStyle { get }
@@ -147,7 +153,8 @@ public protocol ENSignatureBoxTheme {
 }
 ```
 
-#### AlertTheme theme 
+#### AlertTheme theme
+
 ```swift
 public protocol ENAlertTheme {
 	var confirmButton: LabelStyle { get }
@@ -173,7 +180,7 @@ public protocol ENAlertTheme {
 }
 ```
 
-#### DigitalSignage theme 
+#### DigitalSignage theme
 
 ```swift
 public protocol ENDigitalSignageTheme {
@@ -186,7 +193,7 @@ public protocol ENDigitalSignageTheme {
 }
 ```
 
-#### Viewer theme 
+#### Viewer theme
 
 ```swift
 public protocol ENViewerTheme {
@@ -201,11 +208,11 @@ public protocol ENViewerTheme {
 }
 ```
 
-
 The whole theme system works by these structs:
 
 ##### BackgroundStyle
-```swift      
+
+```swift
 public struct BackgroundStyle {
 	var background: ENColor
 	var cornerRadius: CGFloat
@@ -213,7 +220,9 @@ public struct BackgroundStyle {
 }
 
 ```
+
 ##### TextStyle
+
 ```swift
 public struct TextStyle {
 	public enum FontWeight {
@@ -229,20 +238,26 @@ public struct TextStyle {
 	var fontDefinition: ENFont
 }
 ```
+
 ##### LabelStyle
+
 ```swift
 public struct LabelStyle {
 	var textStyle: TextStyle
 	var backgroundStyle: BackgroundStyle
 }
 ```
+
 ##### TintStyle
-```swift      
+
+```swift
 public struct TintStyle {
-	var tint: ENColor	
+	var tint: ENColor
 }
 ```
+
 ##### BorderStyle
+
 ```swift
 public struct BorderStyle {
 	var borderWidth: ENSize
@@ -253,31 +268,32 @@ public struct BorderStyle {
 For convenience, I've defined `BasicColor`, `BasicSize` and `BasicFont` with their constructor necessary to extends `ENColor`, `ENSize` and `ENFont`. However you can create your own structs or just extend these protocols on your class to define your theme.
 
 ## Utilities
+
 ### Alerts
 
-The main public function is 
+The main public function is
 
 ```swift
-@discardableResult 
+@discardableResult
 public func showAlert(
-	alertType: ENAlertViewController.AlertType, 
-	title: String, 
-	subtitle: String, 
-	firstButton: AlertButton? = nil, 
-	secondButton: AlertButton? = nil, 
-	alertTextFieldAction: AlertTextField? = nil, 
+	alertType: ENAlertViewController.AlertType,
+	title: String,
+	subtitle: String,
+	firstButton: AlertButton? = nil,
+	secondButton: AlertButton? = nil,
+	alertTextFieldAction: AlertTextField? = nil,
 	inViewController viewController: UIViewController? = nil)
 ```
 
-To make its use much easier, you can find also some *packed* functions which returns a specific type of alert:
+To make its use much easier, you can find also some _packed_ functions which returns a specific type of alert:
 
 - Input alert:
 
 ```swift
  public func showInputAlert(
- 	title: String, 
-	subtitle: String, 
-	alertTextFieldAction: AlertTextField, 
+ 	title: String,
+	subtitle: String,
+	alertTextFieldAction: AlertTextField,
 	inViewController viewController: UIViewController? = nil)
 ```
 
@@ -285,7 +301,7 @@ To make its use much easier, you can find also some *packed* functions which ret
 
 ```swift
 public func showProgress(
-	withTitle title: String, 
-	subtitle: String, 
+	withTitle title: String,
+	subtitle: String,
 	inViewController viewController: UIViewController? = nil)
 ```
