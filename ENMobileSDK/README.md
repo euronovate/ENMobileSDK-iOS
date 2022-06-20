@@ -13,6 +13,7 @@ It's the core module. This module is included in every submodule, and keeps comm
 7. [Utilities](#utilities)
 8. [Advanced usage](#advanced-usage)
 	- [ENNetworkConfig](#ENNetworkConfig)
+	- [ENMobileSDKEvent](#enmobilesdkevent)
 
 
 ## COCOAPODS
@@ -371,3 +372,40 @@ This key-value structure lets you add additional headers to add to every request
 
 #### Custom body
 This structure has a key and a key-value body as variables. The `key` is the only one difference between custom headers. In fact lets you _inject_ a json with custom datas inside our requests.
+
+### ENMobileSDKEvent
+ENMobileSDK communication between modules is made by a custom pub-sub event management. There are many event implemented, used internally by the modules, or even available to be used by the host app.
+
+```swift
+public enum ENMobileSDKEvent: String {
+    case willEnterForeground
+    case didEnterBackground
+    case canConfirmDocument
+    case disableConfirmDocument
+    case didSignDocument
+    case signDocument
+    case signLocalDocument
+    case abortedDocument
+    case closedDocument
+    case viewerDidClose
+    case viewDocument
+    case viewerIsIdle
+    case reachabilityChanged
+}
+```
+
+As I said before, these are implemented for internal use, but you can subscribe to them and get events too.
+
+To subscribe to an event, just call this function:
+
+```swift
+ENMobileSDK.subscribe(toSocketEvent: .closedDocument) { closedDocumentData in
+
+}
+```
+
+This function returns an `ENMobileSDKCallback`, so that you can unsubscribe to this event whenever you want, by calling:
+
+```swift
+ENMobileSDK.unsubscribe(callback: yourReturnedCallback)
+```
