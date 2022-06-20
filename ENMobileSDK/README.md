@@ -7,6 +7,13 @@ It's the core module. This module is included in every submodule, and keeps comm
 1.  [Installation](#COCOAPODS)
 2. [Basic usage](#basic-usage)
 3. [Logs](#logs)
+4. [ENLanguage](#enlanguage)
+5. [ENAuthenticable](#enauthenticables)
+6. [Theme](#theme)
+7. [Utilities](#utilities)
+8. [Advanced usage](#advanced-usage)
+	- [ENNetworkConfig](#ENNetworkConfig)
+
 
 ## COCOAPODS
 
@@ -30,8 +37,6 @@ Task {
                 password: password
                 ),
             enMobileSDKConfig: ENMobileSDKConfig(
-                skipSSL: true,
-                oAuth2: nil,
                 enabledLanguages: [.en]))
 		.with(enTheme: nil)
         .with(certificateOwnerInfo: ENCertificateOwnerInfo())
@@ -333,3 +338,36 @@ public struct ENDocum {
 ```
 
 This alert is mostly used to choose a document to interact with from local source (for example from the `Bundle`). In example directory there's one which shows how to use it.
+
+
+## Advanced usage
+### ENNetworkConfig
+This config is available as a parameter of `ENMobileSDKConfig`, and requires these informations:
+
+```swift
+public struct ENNetworkConfig {
+    var skipSSL: Bool
+    public var oAuth2: ENOAuth2?
+    var customHeaders: [String: ENCustomHeader]
+    var customBody: ENCustomBody
+}
+```
+
+#### ENOAuth2
+ENMobileSDK let you setup an OAuth2 proxy to authenticate and authorize our APIs respecting your authentication rules. It gives an url to make authentication and a struct or a class which respect `OAuth2Parameters` protocol:
+
+```swift
+public protocol OAuth2Parameters {
+    var headersDict:    [String: Any] { get }
+    var bodyDict:       [String: Any] { get }
+    var deviceSerialNumber: String?   { get }
+}
+```
+
+These let's you make a request with headers or body required from your OAuth2 url, and then get back an OAuth2 token to pass to our requests.
+
+#### Custom headers
+This key-value structure lets you add additional headers to add to every request
+
+#### Custom body
+This structure has a key and a key-value body as variables. The `key` is the only one difference between custom headers. In fact lets you _inject_ a json with custom datas inside our requests.
