@@ -4,7 +4,7 @@
 
 ## COCOAPODS
 
-Add `pod 'ENPubSub'` to your **PodFile**
+Add `pod 'ENPubSub', '1.0.1'` to your **PodFile**
 
 PubSub system communication to let sign or make other actions in realtime.
 

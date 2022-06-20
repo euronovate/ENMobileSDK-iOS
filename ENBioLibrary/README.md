@@ -4,7 +4,7 @@
 
 ## COCOAPODS
 
-Add `pod 'ENBioLibrary'` to your **PodFile**
+Add `pod 'ENBioLibrary', '1.0.1'` to your **PodFile**
 
 It's the bridge between SignatureBox datas and XML biodata generator from ObjC ENBioLibrary.
 

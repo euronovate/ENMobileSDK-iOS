@@ -4,11 +4,16 @@
 
 It's the core module. This module is included in every submodule, and keeps common functions to avoid circular dependencies between them. So it's not necessary to add to every module.
 
+1.  [Installation](#COCOAPODS)
+2. [Basic usage](#basic-usage)
+3. [Logs](#logs)
+
 ## COCOAPODS
 
-Add `pod 'ENMobileSDK'` to your **PodFile**
+Add `pod 'ENMobileSDK', '1.0.1'` to your **PodFile**
 
 ## Basic usage
+
 
 This SDK is builder-oriented, so every step is linked to previous and next, without possibility to shuffle them. You can find optional fields, but when something is required, is necessary to go on.
 
@@ -305,3 +310,26 @@ public func showProgress(
 	subtitle: String,
 	inViewController viewController: UIViewController? = nil)
 ```
+
+
+- Document list alert:
+
+```swift
+@discardableResult public func showListAlert(
+	_ alertList: AlertList) -> ENAlertViewController?
+```
+
+The `AlertList` param is a struct which contains an array of `ENDocum` and a callback which returns the selected `ENDocum`.
+
+```swift
+public struct ENDocum {
+	public init(name: String, url: String) {
+		self.name = name
+		self.url = url
+	}
+	public var name: String
+	public var url: String
+}
+```
+
+This alert is mostly used to choose a document to interact with from local source (for example from the `Bundle`). In example directory there's one which shows how to use it.

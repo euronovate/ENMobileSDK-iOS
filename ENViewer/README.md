@@ -4,7 +4,7 @@
 
 ## COCOAPODS
 
-Add `pod 'ENViewer'` to your **PodFile**
+Add `pod 'ENViewer', '1.0.1'` to your **PodFile**
 
 Module which let you see a PDF from either local source or SoftServer.
 

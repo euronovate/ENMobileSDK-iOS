@@ -4,6 +4,6 @@
 
 ## COCOAPODS
 
-Add `pod 'ENBioLibrary_ObjC'` to your **PodFile**
+Add `pod 'ENBioLibrary_ObjC', '1.0.1'` to your **PodFile**
 
 Delegate module for xml bioData generation. Cooperates with [ENBioLibrary](ENBioLibrary/README.md).

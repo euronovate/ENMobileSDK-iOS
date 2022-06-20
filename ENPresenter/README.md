@@ -4,7 +4,7 @@
 
 ## COCOAPODS
 
-Add `pod 'ENPresenter'` to your **PodFile**
+Add `pod 'ENPresenter', '1.0.1'` to your **PodFile**
 
 The source code used by ENViewer to show PDF.
 

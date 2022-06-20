@@ -4,7 +4,7 @@
 
 ## COCOAPODS
 
-Add `pod 'ENSoftServer'` to your **PodFile**
+Add `pod 'ENSoftServer', '1.0.1'` to your **PodFile**
 
 Communication between SDK and SoftServer webserver.
 

@@ -4,7 +4,7 @@
 
 ## COCOAPODS
 
-Add `pod 'ENPDFMiddleware'` to your **PodFile**
+Add `pod 'ENPDFMiddleware', '1.0.1'` to your **PodFile**
 
 ## Basic usage
 

@@ -4,7 +4,7 @@
 
 ## COCOAPODS
 
-Add `pod 'ENPDFProcessor'` to your **PodFile**
+Add `pod 'ENPDFProcessor', '1.0.1'` to your **PodFile**
 
 ## Basic usage
 

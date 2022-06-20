@@ -4,7 +4,7 @@
 
 ## COCOAPODS
 
-Add `pod 'ENSignatureBox'` to your **PodFile**
+Add `pod 'ENSignatureBox', '1.0.1'` to your **PodFile**
 
 ## Basic usage
 
