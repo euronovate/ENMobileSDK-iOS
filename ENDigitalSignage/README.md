@@ -30,6 +30,13 @@ public struct ENCTAConfig {
 ```
 
 ```swift
+public enum ENCTAType {
+    case guid
+    case documentList(documents: [ENDocum])
+}
+```
+
+```swift
 public enum ENCTAUIComponent {
     case hidden
     case directlyOnDS(event: ENCTAEventType)
@@ -44,12 +51,6 @@ public enum ENCTAEventType {
 }
 ```
 
-```swift
-public enum ENCTAType {
-    case guid
-    case documentList(documents: [ENDocum])
-}
-```
 
 - #### Online mode
 
