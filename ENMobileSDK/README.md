@@ -13,6 +13,7 @@ It's the core module. This module is included in every submodule, and keeps comm
 7. [Utilities](#utilities)
 8. [Advanced usage](#advanced-usage)
 	- [ENNetworkConfig](#ENNetworkConfig)
+	- [KeepScreenAlwaysOn](#KeepScreenAlwaysOn)
 	- [ENMobileSDKEvent](#enmobilesdkevent)
 
 
@@ -21,7 +22,6 @@ It's the core module. This module is included in every submodule, and keeps comm
 Add `pod 'ENMobileSDK', '1.0.1'` to your **PodFile**
 
 ## Basic usage
-
 
 This SDK is builder-oriented, so every step is linked to previous and next, without possibility to shuffle them. You can find optional fields, but when something is required, is necessary to go on.
 
@@ -38,7 +38,7 @@ Task {
                 password: password
                 ),
             enMobileSDKConfig: ENMobileSDKConfig(
-                enabledLanguages: [.en]))
+                enabledLanguages: [.en], keepScreenAlwaysOn: false))
 		.with(enTheme: nil)
         .with(certificateOwnerInfo: ENCertificateOwnerInfo())
         .with(
@@ -372,6 +372,10 @@ This key-value structure lets you add additional headers to add to every request
 
 #### Custom body
 This structure has a key and a key-value body as variables. The `key` is the only one difference between custom headers. In fact lets you _inject_ a json with custom datas inside our requests.
+
+### KeepScreenAlwaysOn
+
+This flag, available in `ENMobileSDKConfig`, lets you prevent sleep mode of your tablet.
 
 ### ENMobileSDKEvent
 ENMobileSDK communication between modules is made by a custom pub-sub event management. There are many event implemented, used internally by the modules, or even available to be used by the host app.
