@@ -1,0 +1,112 @@
+PODS:
+  - AnyCodable-FlightSchool (0.6.5)
+  - BlueCryptor (1.0.32)
+  - BlueECC (1.2.5)
+  - BlueRSA (1.0.200)
+  - ENBioLibrary (1.0.1):
+    - ENBioLibrary_ObjC (= 1.0.1)
+    - ENMobileSDK (= 1.0.1)
+    - ENUtils (= 1.0.1)
+  - ENBioLibrary_ObjC (1.0.1)
+  - ENMobileSDK (1.0.1):
+    - AnyCodable-FlightSchool (~> 0.6.0)
+    - ENUtils (= 1.0.1)
+    - ReachabilitySwift
+    - SwiftJWT
+    - SwiftKeychainWrapper
+  - ENPDFMiddleware (1.0.1):
+    - AnyCodable-FlightSchool (~> 0.6.0)
+    - ENMobileSDK (= 1.0.1)
+    - ENPDFProcessor (= 1.0.1)
+    - ENSoftServer (= 1.0.1)
+    - KituraContracts
+  - ENPDFProcessor (1.0.1):
+    - ENMobileSDK (= 1.0.1)
+  - ENPresenter (1.0.1):
+    - ENMobileSDK (= 1.0.1)
+  - ENSignatureBox (1.0.1):
+    - ENBioLibrary (= 1.0.1)
+    - ENPDFMiddleware (= 1.0.1)
+    - ENUtils (= 1.0.1)
+  - ENSoftServer (1.0.1):
+    - AnyCodable-FlightSchool (~> 0.6.0)
+    - ENMobileSDK (= 1.0.1)
+    - ENUtils (= 1.0.1)
+  - ENUtils (1.0.1):
+    - SwiftKeychainWrapper
+    - ZIPFoundation (~> 0.9)
+  - ENViewer (1.0.1):
+    - ENPDFProcessor (= 1.0.1)
+    - ENPresenter (= 1.0.1)
+    - ENSignatureBox (= 1.0.1)
+    - ENUtils (= 1.0.1)
+  - KituraContracts (1.2.1):
+    - LoggerAPI (~> 1.7)
+  - LoggerAPI (1.9.200):
+    - Logging (~> 1.1)
+  - Logging (1.4.0)
+  - ReachabilitySwift (5.0.0)
+  - SwiftJWT (3.6.200):
+    - BlueCryptor (~> 1.0)
+    - BlueECC (~> 1.1)
+    - BlueRSA (~> 1.0)
+    - KituraContracts (~> 1.2)
+    - LoggerAPI (~> 1.7)
+  - SwiftKeychainWrapper (4.0.1)
+  - ZIPFoundation (0.9.13)
+
+DEPENDENCIES:
+  - ENSignatureBox
+  - ENViewer
+
+SPEC REPOS:
+  https://github.com/euronovate/euronovate-pods.git:
+    - ENBioLibrary
+    - ENBioLibrary_ObjC
+    - ENMobileSDK
+    - ENPDFMiddleware
+    - ENPDFProcessor
+    - ENPresenter
+    - ENSignatureBox
+    - ENSoftServer
+    - ENUtils
+    - ENViewer
+  trunk:
+    - AnyCodable-FlightSchool
+    - BlueCryptor
+    - BlueECC
+    - BlueRSA
+    - KituraContracts
+    - LoggerAPI
+    - Logging
+    - ReachabilitySwift
+    - SwiftJWT
+    - SwiftKeychainWrapper
+    - ZIPFoundation
+
+SPEC CHECKSUMS:
+  AnyCodable-FlightSchool: 84b795a9d3ec7ba9e5488673d15cc1b37a566af4
+  BlueCryptor: b0aee3d9b8f367b49b30de11cda90e1735571c24
+  BlueECC: 0d18e93347d3ec6d41416de21c1ffa4d4cd3c2cc
+  BlueRSA: dfeef51db96bcc4edec654956c1581adbda4e6a3
+  ENBioLibrary: b72e0ac77486e42a50a602b53346b665fb5fa49c
+  ENBioLibrary_ObjC: 26295d69f93f9f5b1197c24c0e11185f1bc2296c
+  ENMobileSDK: 085e9939d449a31cc32188a1b60dfe1548f9aa97
+  ENPDFMiddleware: 0a0037b466f2cdabe3ce0535a203a76c40906387
+  ENPDFProcessor: 3ffa7551659c9db603dfaec2370e5556fd338b66
+  ENPresenter: 6a7be09bb1dc5bb1ab9f2f009d00e643c7ddce56
+  ENSignatureBox: f9edbe818a5489bd1a368fdba884da8d16e70e9e
+  ENSoftServer: 0ac64268a15b6f3b764db7bc5802f32e2b2b6ffa
+  ENUtils: 1c402793b4722db45cdc1f545a0beec8fa46c6c5
+  ENViewer: 3ab8896a2d3237c4b38e48848228a33a5fecaad1
+  KituraContracts: e845e60dc8627ad0a76fa55ef20a45451d8f830b
+  LoggerAPI: ad9c4a6f1e32f518fdb43a1347ac14d765ab5e3d
+  Logging: beeb016c9c80cf77042d62e83495816847ef108b
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SwiftJWT: 88c412708f58c169d431d344c87bc79a87c830ae
+  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
+  ZIPFoundation: ae5b4b813d216d3bf0a148773267fff14bd51d37
+
+PODFILE CHECKSUM: 866c14a3908e96d37a9b72d0719ba58ed742a8e9
+
+COCOAPODS: 1.11.3

@@ -32,7 +32,9 @@ class ViewController: UIViewController {
 
     let certificateOwnerInfo = ENCertificateOwnerInfo(organization: "", countryCode: "", localityName: "", commonName: "")
 
-    let signatureBoxConfig = ENSignatureBoxConfig(signatureSourceType: .any, signatureImageConfig: .signatureAndTimestamp, useAlpha: true, signatureContentMode: .keepFieldRatio, enableSignatureOverwrite: true)
+    let signatureBoxConfig = ENSignatureBoxConfig(signatureSourceType: .any, signatureImageConfig: .signatureAndTimestamp(watermarkReservedHeight: 0.4), useAlpha: true, signatureContentMode: .keepFieldRatio, enableSignatureOverwrite: true, updateDocumentStatusOnDismiss: false)
+    
+    let viewerConfig = ENViewerConfig(signFieldPlaceholder: .signerName)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +56,7 @@ class ViewController: UIViewController {
             let mobileSDK = await ENMobileSDK
                 .with(
                     enAuthConfig: ENAuthConfig(baseUrl: baseUrl, license: licenseKey, username: username, password: password),
-                    enMobileSDKConfig:ENMobileSDKConfig(enabledLanguages: [.en, .gr], certificateSourceType: .generated, certificateOwnerInfo: .init(), networkConfig: networkConfig))
+                    enMobileSDKConfig:ENMobileSDKConfig(enabledLanguages: [.en, .gr], certificateSourceType: .generated, certificateOwnerInfo: .init(), networkConfig: networkConfig, keepScreenAlwaysOn: false))
                 .with(customTheme: nil)
                 .with(certificateOwnerInfo: certificateOwnerInfo)
                 .with(logLevel: .verbose, logServerConfig: logServerConfig, saveLogsIniCloud: false)
@@ -72,7 +74,7 @@ class ViewController: UIViewController {
                 .with(responseCallback: { responseCallback in
                     print(responseCallback)
                 })
-                .with(authenticable: ENViewer.build())
+                .with(authenticable: ENViewer.with(config: viewerConfig).build())
                 .with(authenticableToEndBuilder: ENSignatureBox.with(signatureBoxConfig: signatureBoxConfig).build())
                 .build()
             self.hideLoader()
@@ -80,11 +82,12 @@ class ViewController: UIViewController {
                 switch response {
                 case .error(let error):
                     print(error)
-                case .success(let structure):
+                case .success(let tuple):
+                    let container = tuple.container
                     DispatchQueue.main.async {
                         if let viewer = mobileSDK.viewer,
-                           let json = structure.structureModel.json {
-                            viewer.present(pdfContainer: structure, json: json, in: self)
+                           let json = container.structureModel.json {
+                            viewer.present(pdfContainer: container, json: json, in: self)
                         }
                     }
                 }

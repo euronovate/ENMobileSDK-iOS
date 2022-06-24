@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     )
     
     let mobileSDKConfig = ENMobileSDKConfig(enabledLanguages: [.en, .gr], certificateSourceType: .generated, certificateOwnerInfo: .init(), networkConfig: ENNetworkConfig(
-        skipSSL: true)
+        skipSSL: true), keepScreenAlwaysOn: false
     )
     
     let digitalSignageConfig = ENDigitalSignageConfig(
