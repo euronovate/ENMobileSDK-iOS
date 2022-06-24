@@ -45,3 +45,7 @@ After that, you can import either module you need, just depending on what you ne
 - [ENDigitalSignage](ENDigitalSignage/README.md)
 - [ENPubSub](ENPubSub/README.md)
 - [ENSignatureBox](ENSignatureBox/README.md)
+
+## CHANGELOGS
+
+- [1.0.1](1.0.1.md)
