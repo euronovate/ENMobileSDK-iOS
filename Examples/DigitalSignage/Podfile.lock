@@ -1,0 +1,75 @@
+PODS:
+  - AnyCodable-FlightSchool (0.6.5)
+  - BlueCryptor (1.0.32)
+  - BlueECC (1.2.5)
+  - BlueRSA (1.0.200)
+  - ENDigitalSignage (1.0.1):
+    - ENMobileSDK (= 1.0.1)
+    - XMLCoder (~> 0.13.1)
+  - ENMobileSDK (1.0.1):
+    - AnyCodable-FlightSchool (~> 0.6.0)
+    - ENUtils (= 1.0.1)
+    - ReachabilitySwift
+    - SwiftJWT
+    - SwiftKeychainWrapper
+  - ENUtils (1.0.1):
+    - SwiftKeychainWrapper
+    - ZIPFoundation (~> 0.9)
+  - KituraContracts (1.2.1):
+    - LoggerAPI (~> 1.7)
+  - LoggerAPI (1.9.200):
+    - Logging (~> 1.1)
+  - Logging (1.4.0)
+  - ReachabilitySwift (5.0.0)
+  - SwiftJWT (3.6.200):
+    - BlueCryptor (~> 1.0)
+    - BlueECC (~> 1.1)
+    - BlueRSA (~> 1.0)
+    - KituraContracts (~> 1.2)
+    - LoggerAPI (~> 1.7)
+  - SwiftKeychainWrapper (4.0.1)
+  - XMLCoder (0.13.1)
+  - ZIPFoundation (0.9.13)
+
+DEPENDENCIES:
+  - ENDigitalSignage
+
+SPEC REPOS:
+  https://github.com/euronovate/euronovate-pods.git:
+    - ENDigitalSignage
+    - ENMobileSDK
+    - ENUtils
+  trunk:
+    - AnyCodable-FlightSchool
+    - BlueCryptor
+    - BlueECC
+    - BlueRSA
+    - KituraContracts
+    - LoggerAPI
+    - Logging
+    - ReachabilitySwift
+    - SwiftJWT
+    - SwiftKeychainWrapper
+    - XMLCoder
+    - ZIPFoundation
+
+SPEC CHECKSUMS:
+  AnyCodable-FlightSchool: 84b795a9d3ec7ba9e5488673d15cc1b37a566af4
+  BlueCryptor: b0aee3d9b8f367b49b30de11cda90e1735571c24
+  BlueECC: 0d18e93347d3ec6d41416de21c1ffa4d4cd3c2cc
+  BlueRSA: dfeef51db96bcc4edec654956c1581adbda4e6a3
+  ENDigitalSignage: 47b6e08abf40be8b630738639648c8684f9bce89
+  ENMobileSDK: 085e9939d449a31cc32188a1b60dfe1548f9aa97
+  ENUtils: 1c402793b4722db45cdc1f545a0beec8fa46c6c5
+  KituraContracts: e845e60dc8627ad0a76fa55ef20a45451d8f830b
+  LoggerAPI: ad9c4a6f1e32f518fdb43a1347ac14d765ab5e3d
+  Logging: beeb016c9c80cf77042d62e83495816847ef108b
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SwiftJWT: 88c412708f58c169d431d344c87bc79a87c830ae
+  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
+  XMLCoder: bd962586bc6777a9e6a17bc84d97a3c5413a9495
+  ZIPFoundation: ae5b4b813d216d3bf0a148773267fff14bd51d37
+
+PODFILE CHECKSUM: f78eb65f919c827e764204fbc21cc190ab08075f
+
+COCOAPODS: 1.11.3

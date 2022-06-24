@@ -31,7 +31,8 @@ class ViewController: UIViewController {
     
     let digitalSignageConfig = ENDigitalSignageConfig(
         baseURL: "",
-        licenseCode: ""
+        licenseCode: "",
+        ctaConfig: .init(component: .button(presentationType: .fade(event: .easterEgg(numberOfTaps: 5))), presentationType: .guid)
     )
     
     override func viewDidLoad() {
