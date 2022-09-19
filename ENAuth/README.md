@@ -1,6 +1,6 @@
 ## ENAuth
 
-![](https://badgen.net/badge/stable/1.0.1/blue)
+![](https://badgen.net/badge/stable/1.0.3/blue)
 
 It's responsible to check modules license.
 You can work either locally or online as you wish. If you want to work offline, you have to pass in `ENAuthConfig` your jwt token.

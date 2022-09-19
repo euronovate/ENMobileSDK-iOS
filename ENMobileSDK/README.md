@@ -1,25 +1,24 @@
 ## ENMobileSDK (conventionally ENCore)
 
-![](https://badgen.net/badge/stable/1.0.1/blue)
+![](https://badgen.net/badge/stable/1.0.3/blue)
 
 It's the core module. This module is included in every submodule, and keeps common functions to avoid circular dependencies between them. So it's not necessary to add to every module.
 
 1.  [Installation](#COCOAPODS)
-2. [Basic usage](#basic-usage)
-3. [Logs](#logs)
-4. [ENLanguage](#enlanguage)
-5. [ENAuthenticable](#enauthenticables)
-6. [Theme](#theme)
-7. [Utilities](#utilities)
-8. [Advanced usage](#advanced-usage)
-	- [ENNetworkConfig](#ENNetworkConfig)
-	- [KeepScreenAlwaysOn](#KeepScreenAlwaysOn)
-	- [ENMobileSDKEvent](#enmobilesdkevent)
-
+2.  [Basic usage](#basic-usage)
+3.  [Logs](#logs)
+4.  [ENLanguage](#enlanguage)
+5.  [ENAuthenticable](#enauthenticables)
+6.  [Theme](#theme)
+7.  [Utilities](#utilities)
+8.  [Advanced usage](#advanced-usage)
+    - [ENNetworkConfig](#ENNetworkConfig)
+    - [KeepScreenAlwaysOn](#KeepScreenAlwaysOn)
+    - [ENMobileSDKEvent](#enmobilesdkevent)
 
 ## COCOAPODS
 
-Add `pod 'ENMobileSDK', '1.0.1'` to your **PodFile**
+Add `pod 'ENMobileSDK', '1.0.3'` to your **PodFile**
 
 ## Basic usage
 
@@ -38,7 +37,7 @@ Task {
                 password: password
                 ),
             enMobileSDKConfig: ENMobileSDKConfig(
-                enabledLanguages: [.en], keepScreenAlwaysOn: false))
+                enabledLanguages: [.en], keepScreenAlwaysOn: false, considerAllSignatureFieldCharacters: true, appVersion: "app_version_string"))
 		.with(enTheme: nil)
         .with(certificateOwnerInfo: ENCertificateOwnerInfo())
         .with(
@@ -317,7 +316,6 @@ public func showProgress(
 	inViewController viewController: UIViewController? = nil)
 ```
 
-
 - Document list alert:
 
 ```swift
@@ -340,9 +338,10 @@ public struct ENDocum {
 
 This alert is mostly used to choose a document to interact with from local source (for example from the `Bundle`). In example directory there's one which shows how to use it.
 
-
 ## Advanced usage
+
 ### ENNetworkConfig
+
 This config is available as a parameter of `ENMobileSDKConfig`, and requires these informations:
 
 ```swift
@@ -355,6 +354,7 @@ public struct ENNetworkConfig {
 ```
 
 #### ENOAuth2
+
 ENMobileSDK let you setup an OAuth2 proxy to authenticate and authorize our APIs respecting your authentication rules. It gives an url to make authentication and a struct or a class which respect `OAuth2Parameters` protocol:
 
 ```swift
@@ -368,9 +368,11 @@ public protocol OAuth2Parameters {
 These let's you make a request with headers or body required from your OAuth2 url, and then get back an OAuth2 token to pass to our requests.
 
 #### Custom headers
+
 This key-value structure lets you add additional headers to add to every request
 
 #### Custom body
+
 This structure has a key and a key-value body as variables. The `key` is the only one difference between custom headers. In fact lets you _inject_ a json with custom datas inside our requests.
 
 ### KeepScreenAlwaysOn
@@ -378,6 +380,7 @@ This structure has a key and a key-value body as variables. The `key` is the onl
 This flag, available in `ENMobileSDKConfig`, lets you prevent sleep mode of your tablet.
 
 ### ENMobileSDKEvent
+
 ENMobileSDK communication between modules is made by a custom pub-sub event management. There are many event implemented, used internally by the modules, or even available to be used by the host app.
 
 ```swift
@@ -395,6 +398,7 @@ public enum ENMobileSDKEvent: String {
     case viewDocument
     case viewerIsIdle
     case reachabilityChanged
+	case sdkInitialized
 }
 ```
 
