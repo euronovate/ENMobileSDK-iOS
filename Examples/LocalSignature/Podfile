@@ -4,8 +4,8 @@ source 'https://cdn.cocoapods.org/'
 target 'LocalSignature' do
 
   use_frameworks!
-  pod 'ENSignatureBox'
-  pod 'ENViewer'
+  pod 'ENSignatureBox', '1.0.3'
+  pod 'ENViewer', '1.0.3'
 end
 
 post_install do |installer|

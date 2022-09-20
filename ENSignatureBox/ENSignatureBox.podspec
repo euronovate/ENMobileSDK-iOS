@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ENSignatureBox"
-  s.version      = "1.0.1"
+  s.version      = "1.0.3"
   s.summary      = "Draw on a canvas your signature with either pen or finger."
   s.description  = <<-DESC
   Draw on a canvas your signature with either pen or finger.
@@ -13,16 +13,16 @@ Pod::Spec.new do |s|
               }
   s.author             = { "$(git config user.name)" => "$(git config user.email)" }
   s.source = {
-    :http => 'https://xcframeworks.s3.eu-south-1.amazonaws.com/ENSignatureBox/1.0.1/ENSignatureBox.xcframework.zip',
+    :http => 'https://xcframeworks.s3.eu-south-1.amazonaws.com/ENSignatureBox/1.0.3/ENSignatureBox.xcframework.zip',
     :type => 'zip'
   }
   s.vendored_frameworks = "ENSignatureBox.xcframework"
   s.platform = :ios
   s.swift_version = "5.0"
   s.ios.deployment_target  = '14.0'
-  s.dependency 'ENBioLibrary', '1.0.1'
-  s.dependency 'ENPDFMiddleware', '1.0.1'
-  s.dependency 'ENUtils', '1.0.1'
+  s.dependency 'ENBioLibrary', '1.0.3'
+  s.dependency 'ENPDFMiddleware', '1.0.3'
+  s.dependency 'ENUtils', '1.0.3'
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
