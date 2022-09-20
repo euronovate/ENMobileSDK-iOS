@@ -1,7 +1,9 @@
 # ENMobileSDK
+
 ![](https://badgen.net/badge/License/Apache%202.0/blue)
 
 ### THIS SOFTWARE REQUIRES A LICENSE TO WORK.
+
 FOR ANY INFORMATION ABOUT, CONTACT US TO [customer[dot]sales[at]euronovate[dot]com](mailto:customer.sales@euronovate.com)
 
 ## Installation
@@ -34,6 +36,7 @@ After that, you can import either module you need, just depending on what you ne
 **Note** that many of these modules (like **ENUtils**) are already imported by other modules. So it's not necessary to add them to your Podfile.
 
 ## Modules
+
 - [ENMobileSDK (conventionally ENCore)](ENMobileSDK/README.md)
 - [ENPDFMiddleware](ENPDFMiddleware/README.md)
 - [ENSoftServer](ENSoftServer/README.md)
@@ -49,3 +52,4 @@ After that, you can import either module you need, just depending on what you ne
 ## CHANGELOGS
 
 - [1.0.1](1.0.1.md)
+- [1.0.3](1.0.3.md)

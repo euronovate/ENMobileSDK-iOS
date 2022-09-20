@@ -1,10 +1,10 @@
 ## ENPubSub
 
-![](https://badgen.net/badge/stable/1.0.1/blue)
+![](https://badgen.net/badge/stable/1.0.3/blue)
 
 ## COCOAPODS
 
-Add `pod 'ENPubSub', '1.0.1'` to your **PodFile**
+Add `pod 'ENPubSub', '1.0.3'` to your **PodFile**
 
 PubSub system communication to let sign or make other actions in realtime.
 
@@ -51,13 +51,14 @@ public protocol ENPubSubDelegate: AnyObject {
 ```
 
 ## Advanced config
+
 `EnPubSubConfig` provides a new parameter, called `ENPubSubReconnectionType`, responsible to manage reconnection retries to socket server.
 
 ```swift
 public enum ENPubSubReconnectionType {
     case enabled(connectionTimerInterval: Int, reconnectionTimerInterval: Int)
     case disabled
-  
+
     public static var defaultReconnectionType: ENPubSubReconnectionType {
         .enabled(connectionTimerInterval: 60, reconnectionTimerInterval: 15)
     }

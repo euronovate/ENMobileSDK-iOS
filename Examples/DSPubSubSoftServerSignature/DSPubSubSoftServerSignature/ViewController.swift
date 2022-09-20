@@ -67,7 +67,7 @@ class ViewController: UIViewController {
             let mobileSDK = await ENMobileSDK
                 .with(
                 enAuthConfig: ENAuthConfig(baseUrl: baseUrl, license: licenseKey, username: username, password: password),
-                enMobileSDKConfig: ENMobileSDKConfig(enabledLanguages: [.en, .gr], certificateSourceType: .generated, certificateOwnerInfo: .init(), networkConfig: networkConfig, keepScreenAlwaysOn: false))
+                enMobileSDKConfig: ENMobileSDKConfig(enabledLanguages: [.en, .gr], certificateSourceType: .generated, certificateOwnerInfo: .init(), networkConfig: networkConfig, keepScreenAlwaysOn: false, considerAllSignatureFieldCharacters: false))
                 .with(customTheme: nil)
                 .with(certificateOwnerInfo: certificateOwnerInfo)
                 .with(logLevel: .verbose, logServerConfig: logServerConfig, saveLogsIniCloud: false)

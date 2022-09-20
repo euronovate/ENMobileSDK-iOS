@@ -1,10 +1,10 @@
 ## ENSignatureBox
 
-![](https://badgen.net/badge/stable/1.0.1/blue)
+![](https://badgen.net/badge/stable/1.0.3/blue)
 
 ## COCOAPODS
 
-Add `pod 'ENSignatureBox', '1.0.1'` to your **PodFile**
+Add `pod 'ENSignatureBox', '1.0.3'` to your **PodFile**
 
 ## Basic usage
 
@@ -26,7 +26,7 @@ public struct ENSignatureBoxConfig {
  public let useAlpha: Bool
  var signatureContentMode: ENSignatureContentMode
  public let canEnableSignatureOverwrite: Bool
- 
+
 }
 ```
 
@@ -56,3 +56,5 @@ public enum ENSignatureContentMode {
 It defines the what ratio should be used in SignatureBox, if either keeping field ratio width and height, or using a default ratio. In second case it will center the signature image inside the field without stretching it.
 
 - `updateDocumentStatusOnDismiss`: If true, when dismissed viewer it updates the document status.
+
+`ENSignatureBox` is available in 2 different layouts, and you can try/set them by overriding default param `layoutType` in `ENViewerConfig`.

@@ -1,10 +1,10 @@
 ## ENDigitalSignage
 
-![](https://badgen.net/badge/stable/1.0.1/blue)
+![](https://badgen.net/badge/stable/1.0.3/blue)
 
 ## COCOAPODS
 
-Add `pod 'ENDigitalSignage', '1.0.1'` to your **PodFile**
+Add `pod 'ENDigitalSignage', '1.0.3'` to your **PodFile**
 
 It's a blackbox system to show a media slideshow based on a server-oriented media sync. When connected, it downloads every playlist offline.
 
@@ -15,6 +15,7 @@ public func present(in viewController: UIViewController)
 ```
 
 ## ENDigitalSignageConfig
+
 You can setup DigitalSignage with 2 different solutions.
 As you can see in declarations below, both of them requires `ENCTAConfig` as a parameter.
 
@@ -51,7 +52,6 @@ public enum ENCTAEventType {
 }
 ```
 
-
 - #### Online mode
 
 ```swift
@@ -63,4 +63,3 @@ public init(baseURL: String, licenseCode: String, ctaConfig: ENCTAConfig)
 ```swift
 public init(mediaConfig: ENMediaConfig, ctaConfig: ENCTAConfig)
 ```
-
