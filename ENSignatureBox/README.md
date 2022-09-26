@@ -1,10 +1,10 @@
 ## ENSignatureBox
 
-![](https://badgen.net/badge/stable/1.0.3/blue)
+![](https://badgen.net/badge/stable/1.1.0/blue)
 
 ## COCOAPODS
 
-Add `pod 'ENSignatureBox', '1.0.3'` to your **PodFile**
+Add `pod 'ENSignatureBox', '1.1.0'` to your **PodFile**
 
 ## Basic usage
 

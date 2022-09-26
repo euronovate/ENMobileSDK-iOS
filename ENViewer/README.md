@@ -1,10 +1,10 @@
 ## ENViewer (conventionally ENCore)
 
-![](https://badgen.net/badge/stable/1.0.3/blue)
+![](https://badgen.net/badge/stable/1.1.0/blue)
 
 ## COCOAPODS
 
-Add `pod 'ENViewer', '1.0.1'` to your **PodFile**
+Add `pod 'ENViewer', '1.1.0'` to your **PodFile**
 
 Module which let you see a PDF from either local source or SoftServer.
 
