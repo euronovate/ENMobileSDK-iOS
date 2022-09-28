@@ -11,21 +11,27 @@ Add `pod 'ENSignatureBox', '1.1.0'` to your **PodFile**
 This modules let you draw on a canvas your signature with either pen or finger. The signatureBoxConfig is declared as below:
 
 ```swift
+
+var signatureSourceType: ENSignatureSourceType
+public let signatureImageConfig: ENSignatureImageConfig
+public let useAlpha: Bool
+var signatureContentMode: ENSignatureContentMode
+public let canEnableSignatureOverwrite: Bool
+public let updateDocumentStatusOnDismiss: Bool
+let layoutType: ENSignatureBoxType
+let showInFullScreen: Bool
+
 public struct ENSignatureBoxConfig {
-	public init(signatureSourceType: ENSignatureSourceType, signatureImageConfig: ENSignatureImageConfig, useAlpha: Bool, signatureContentMode: ENSignatureContentMode, enableSignatureOverwrite: Bool,  updateDocumentStatusOnDismiss: Bool) {
+    public init(signatureSourceType: ENSignatureSourceType, signatureImageConfig: ENSignatureImageConfig, useAlpha: Bool, signatureContentMode: ENSignatureContentMode, enableSignatureOverwrite: Bool, updateDocumentStatusOnDismiss: Bool, layoutType: ENSignatureBoxType = .layout1, showInFullScreen: Bool = false) {
 		self.signatureSourceType = signatureSourceType
 		self.signatureImageConfig = signatureImageConfig
 		self.useAlpha = useAlpha
 		self.signatureContentMode = signatureContentMode
 		self.canEnableSignatureOverwrite = enableSignatureOverwrite,
 		self.updateDocumentStatusOnDismiss = updateDocumentStatusOnDismiss
+		self.layoutType = layoutType
+		self.showInFullScreen = showInFullScreen
 	}
-
- var signatureSourceType: ENSignatureSourceType
- public let signatureImageConfig: ENSignatureImageConfig
- public let useAlpha: Bool
- var signatureContentMode: ENSignatureContentMode
- public let canEnableSignatureOverwrite: Bool
 
 }
 ```
@@ -57,4 +63,40 @@ It defines the what ratio should be used in SignatureBox, if either keeping fiel
 
 - `updateDocumentStatusOnDismiss`: If true, when dismissed viewer it updates the document status.
 
-`ENSignatureBox` is available in 2 different layouts, and you can try/set them by overriding default param `layoutType` in `ENViewerConfig`.
+- `ENSignatureBox` is available in 3 different layouts, and you can try/set them by overriding default param `layoutType` in `ENViewerConfig`.
+
+```swift
+public enum ENSignatureBoxType {
+    case layout1
+    case layout2
+    case graphologist
+}
+```
+
+- `showInFullScreen` forces signatureBox's view to go in fullscreen, bypassing signatureField's ratio or other configs about SignatureView. It fills the entire screen.
+
+To present SignatureBox, call the function:
+
+```swift
+	public func present(inViewController viewController: UIViewController, pdfContainer: PDFContainer, fieldSize: CGSize, andSignerName signerName: String, debugMode: Bool = false, callback: ((ENResponse<ENBioResponse>) -> Void)?)
+```
+
+or
+
+```swift
+    public func present(inViewController viewController: UIViewController, debugMode: Bool = false, callback: ((ENResponse<ENBioResponse>) -> Void)?)
+```
+
+The response in the callback is an enum `ENBioResponse`, which returns this associated values with it:
+
+```swift
+public enum ENBioResponse {
+    case encodedXml(value: String)
+    case encodedXmlAndImage(xml: String, image: UIImage)
+    case rawData(points: [ENSignaturePoint])
+    case justPoint(point: ENSignaturePoint)
+}
+```
+
+In common usage, it returns the encoded base64 xml and the generated image from SignatureView.
+If you set `debugMode` flag to `true`, you receive back the raw list of generated points.
