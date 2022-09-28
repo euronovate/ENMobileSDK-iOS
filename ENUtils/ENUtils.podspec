@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ENUtils"
-  s.version      = "1.0.3"
+  s.version      = "1.1.0"
   s.summary      = "A list of utilities used in ENMobileSDK echosystem"
   s.description  = <<-DESC
   This module contains many functions used by other modules to encode/decode, translate and so on.
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
               }
   s.author = { "$(git config user.name)" => "$(git config user.email)" }
   s.source = {
-    :http => 'https://xcframeworks.s3.eu-south-1.amazonaws.com/ENUtils/1.0.3/ENUtils.xcframework.zip',
+    :http => 'https://xcframeworks.s3.eu-south-1.amazonaws.com/ENUtils/1.1.0/ENUtils.xcframework.zip',
     :type => 'zip'
   }
   s.vendored_frameworks = "ENUtils.xcframework"
