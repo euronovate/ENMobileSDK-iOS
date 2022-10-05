@@ -4,11 +4,11 @@ source 'https://cdn.cocoapods.org/'
 target 'DSPubSubSoftServerSignature' do
 
   use_frameworks!
-  pod 'ENDigitalSignage', '1.1.1'
-  pod 'ENPubSub', '1.1.1'
-  pod 'ENSoftServer', '1.1.1'
-  pod 'ENSignatureBox', '1.1.1'
-  pod 'ENViewer', '1.1.1'
+  pod 'ENDigitalSignage', '1.1.2'
+  pod 'ENPubSub', '1.1.2'
+  pod 'ENSoftServer', '1.1.2'
+  pod 'ENSignatureBox', '1.1.2'
+  pod 'ENViewer', '1.1.2'
 end
 
 post_install do |installer|
