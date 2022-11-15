@@ -51,8 +51,8 @@ After that, you can import either module you need, just depending on what you ne
 
 ## CHANGELOGS
 
-- [1.0.1](1.0.1.md)
-- [1.0.3](1.0.3.md)
-- [1.1.0](1.1.0.md)
-- [1.1.1](1.1.1.md)
-- [1.1.2](1.1.2.md)
+- [1.0.1](Changelogs/1.0.1.md)
+- [1.0.3](Changelogs/1.0.3.md)
+- [1.1.0](Changelogs/1.1.0.md)
+- [1.1.1](Changelogs/1.1.1.md)
+- [1.1.2](Changelogs/1.1.2.md)
