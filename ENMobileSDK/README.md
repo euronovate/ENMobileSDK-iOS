@@ -430,4 +430,4 @@ SettingsManager.shared.present(inViewController: UIViewController, dismissComple
 
 When called appears the viewController as shown below.
 
-![[Settings.png]]
+![settings](Settings.png)
