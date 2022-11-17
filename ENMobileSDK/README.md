@@ -15,6 +15,7 @@ It's the core module. This module is included in every submodule, and keeps comm
     - [ENNetworkConfig](#ENNetworkConfig)
     - [KeepScreenAlwaysOn](#KeepScreenAlwaysOn)
     - [ENMobileSDKEvent](#enmobilesdkevent)
+    - [Settings](#settings)
 
 ## COCOAPODS
 
@@ -417,3 +418,16 @@ This function returns an `ENMobileSDKCallback`, so that you can unsubscribe to t
 ```swift
 ENMobileSDK.unsubscribe(callback: yourReturnedCallback)
 ```
+
+### Settings
+
+The `settings` class is used to change runtime and save in persistance area all network parameters in enmobilesdk and each submodules config.
+
+You can call it by using:
+```swift
+SettingsManager.shared.present(inViewController: UIViewController, dismissCompletion: @escaping (Bool) -> Void)
+```
+
+When called appears the viewController as shown below.
+
+![[Settings.png]]
