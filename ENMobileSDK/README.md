@@ -110,7 +110,7 @@ public protocol ENAuthenticable {
 }
 ```
 
-It's a protocol which every module has to extend to be authenticated via [ENAuth](ENAuth/README).
+It's a protocol which every module has to extend to be authenticated via [ENAuth](ENAuth/README.md).
 
 Once authenticated, every module is accessible through an utility variable defined on `ENMobileSDK instance`. For example, module `ENViewer` has a variable defined on ENMobileSDK, so that it's instance is accessible with: `ENMobileSDK.shared?.viewer`.
 
