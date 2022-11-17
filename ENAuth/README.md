@@ -25,7 +25,6 @@ public struct ENAuthConfig {
     var username: String?
     var password: String?
     var jwt: String?
-    var persistenceRepository: JWTPersistenceRepository?
 }
 ```
 
