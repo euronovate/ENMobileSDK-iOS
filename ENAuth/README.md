@@ -5,15 +5,13 @@
 `ENAuth` is a fundamental class used to activate and checking license of each submodules. You can configure ENAuth in two ways: _**with jwt**_ for example to use in offline mode
 
 ```swift
-.with(
-	            enAuthConfig: ENAuthConfig(baseUrl: "yourUrl", license: "yourLicenseKey", jwt: "yourJwt"),
+.with(enAuthConfig: ENAuthConfig(baseUrl: "yourUrl", license: "yourLicenseKey", jwt: "yourJwt"),
 ```
 
 or online mode with licenseKey and serverUrl:
 
 ```swift
-.with(
-	  	            enAuthConfig: ENAuthConfig(baseUrl: "yourUrl", license: "yourLicenseKey"),
+.with(enAuthConfig: ENAuthConfig(baseUrl: "yourUrl", license: "yourLicenseKey"),
 ```
 
 If you haven't serverUrl and licenseKey or Jwt you can contact [customer[dot]sales[at]euronovate[dot]com](mailto:customer.sales@euronovate.com) to request a trial. **Without their sdk won't initialized** so if you try to call an instance of a modules you will get a **crash**.
