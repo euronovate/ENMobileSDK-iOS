@@ -44,7 +44,7 @@ After that, you can import either module you need, just depending on what you ne
 - [ENViewer](ENViewer/README.md)
 - [ENPresenter](ENPresenter/README.md)
 - [ENBioLibrary](ENBioLibrary/README.md)
-- [ENBioLibrary-ObjC](ENBioLibrary-ObjC/README.md)
+- [ENBioLibrary-ObjC](ENBioLibrary_ObjC/README.md)
 - [ENDigitalSignage](ENDigitalSignage/README.md)
 - [ENPubSub](ENPubSub/README.md)
 - [ENSignatureBox](ENSignatureBox/README.md)
