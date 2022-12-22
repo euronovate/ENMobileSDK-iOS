@@ -1,8 +1,8 @@
 ## ENAuth
 
-![](https://badgen.net/badge/stable/1.1.2/blue)
+![](https://badgen.net/badge/stable/1.2.0/blue)
 
-`ENAuth` is a fundamental class used to activate and checking license of each submodules. You can configure ENAuth in two ways: _**with jwt**_ for example to use in offline mode
+`ENAuth` is a fundamental class used to activate and checking license of each submodules. You can configure ENAuth in two ways: ***with jwt*** for example to use in offline mode
 
 ```swift
 .with(enAuthConfig: ENAuthConfig(baseUrl: "yourUrl", license: "yourLicenseKey", jwt: "yourJwt"),
@@ -32,7 +32,7 @@ for example you can request an activation for onyl a specific product, or you ca
 
 ### ENAuth Error
 
-`ENAuthError`  is returned for ENAuth Exceptions:
+`ENAuthError` is returned for ENAuth Exceptions:
 
 ```swift
 public enum ENAuthError: Error {
@@ -53,11 +53,9 @@ public enum ENAuthError: Error {
 }
 ```
 
-
-
 We have default exception in core, but there are other type specific to ENAuthException:
 
--   **licenseVerificationWrongDeviceId** is returned when your jwt contains a wrong device uuid different of your current device.
--   **someProductsHaveProblems** your jwt contains a different list of product(module) that you are trying to activate.
--   **noProductToActivate** is returned when there isn't product(module) available to be activate.
--   **licenseAPIJwtEmpty** your jwt is empty or not valid.
+- **licenseVerificationWrongDeviceId** is returned when your jwt contains a wrong device uuid different of your current device.
+- **someProductsHaveProblems** your jwt contains a different list of product(module) that you are trying to activate.
+- **noProductToActivate** is returned when there isn't product(module) available to be activate.
+- **licenseAPIJwtEmpty** your jwt is empty or not valid.

@@ -1,6 +1,6 @@
 ## ENMobileSDK (conventionally ENCore)
 
-![](https://badgen.net/badge/stable/1.1.2/blue)
+![](https://badgen.net/badge/stable/1.2.0/blue)
 
 It's the core module. This module is included in every submodule, and keeps common functions to avoid circular dependencies between them. So it's not necessary to add to every module.
 
@@ -19,7 +19,7 @@ It's the core module. This module is included in every submodule, and keeps comm
 
 ## COCOAPODS
 
-Add `pod 'ENMobileSDK', '1.1.2'` to your **PodFile**
+Add `pod 'ENMobileSDK', '1.2.0'` to your **PodFile**
 
 ## Basic usage
 
@@ -424,6 +424,7 @@ ENMobileSDK.unsubscribe(callback: yourReturnedCallback)
 The `settings` class is used to change runtime and save in persistance area all network parameters in enmobilesdk and each submodules config.
 
 You can call it by using:
+
 ```swift
 SettingsManager.shared.present(inViewController: UIViewController, dismissCompletion: @escaping (Bool) -> Void)
 ```

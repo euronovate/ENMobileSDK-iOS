@@ -1,10 +1,10 @@
 ## ENBioLibrary
 
-![](https://badgen.net/badge/stable/1.1.2/blue)
+![](https://badgen.net/badge/stable/1.2.0/blue)
 
 ## COCOAPODS
 
-Add `pod 'ENBioLibrary', '1.1.2'` to your **PodFile**
+Add `pod 'ENBioLibrary', '1.2.0'` to your **PodFile**
 
 It's the bridge between SignatureBox datas and XML biodata generator from ObjC ENBioLibrary.
 
