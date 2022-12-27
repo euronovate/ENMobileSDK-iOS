@@ -64,9 +64,11 @@ class ViewController: UIViewController {
                 .with { initCallback in
                     switch initCallback {
                     case .error(let error):
-                        ENMobileSDK.shared?.manageError(error, completion: {
-                            self.buildMobileSDK()
-                        })
+                        DispatchQueue.main.async {
+                            ENMobileSDK.shared?.manageError(error, completion: {
+                                self.buildMobileSDK()
+                            })
+                        }
                     default:
                         break
                     }
