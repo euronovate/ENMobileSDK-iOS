@@ -1,10 +1,10 @@
 ## ENPDFProcessor
 
-![](https://badgen.net/badge/stable/1.1.2/blue)
+![](https://badgen.net/badge/stable/1.2.1/blue)
 
 ## COCOAPODS
 
-Add `pod 'ENPDFProcessor', '1.1.2'` to your **PodFile**
+Add `pod 'ENPDFProcessor', '1.2.1'` to your **PodFile**
 
 ## Basic usage
 
