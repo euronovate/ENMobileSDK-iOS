@@ -42,11 +42,10 @@ Task {
         .with(certificateOwnerInfo: ENCertificateOwnerInfo())
         .with(
             logLevel: .verbose,
-            logServerConfig: ENLogServerConfig(
+            logServerSource: .customExecMap(ENLogServerConfig(
                 baseURL: "baseurl",
                 licenseCode: "licenseCode",
-                userID: "userID"),
-            saveLogsIniCloud: false)
+                userID: "userID")))
         .with { initCallback in
             switch initCallback {
                 case .error(let error):
@@ -69,17 +68,11 @@ Task {
 
 ### Logs
 
-As you can see, there's a log section config, where you can set `logLevel`, `logServerConfig` (which sends most important logs to server setupped in baseURL), and a flag `saveLogsIniCloud`.
+As you can see, there's a log section config, where you can set `logLevel`, `logServerSource` (which can be set as `.none` or `.customExecMap`, and in second case you pass `LogServerConfig` data, in which you set baseURL where send most important logs to server.
 
 ##### Logs accessibility
 
-This last one, let's you save your logs directly on iCloud logs, so that you can easily check them and eventually send them to our team.
-If you set it to `false`, they will be saved in `documents directory`.
-
-- You set **true**:
-  If you set true to this flag, to be able to see them in iCloud Drive directory, you have to: - Create an **iCloud Container** in Developer Apple Portal. - Add iCloud Capability in your app's Target, select iCloud Documents and select the container you've previously created. - Now if you build your app on a device with iCloud enabled, you should see a directory with your name's app in iCloud Drive.
-- You set **false**:
-  If you set false to this flag, logs are saved in `documents` folder, and if you add `Application supports iTunes file sharing` => `TRUE` to your plist file, you can access to your logs directly to Finder's device window if connected to your Mac. If your PC is Windows, you see them into iTunes App.
+Logs are saved in `documents` folder, and if you add `Application supports iTunes file sharing` => `TRUE` to your plist file, you can access to your logs directly to Finder's device window if connected to your Mac. If your PC is Windows, you see them into iTunes App.
 
 This builder returns an instance of `ENMobileSDK`, however you can also access to it's instance through `shared` instance.
 
@@ -92,7 +85,7 @@ The sdk implements a multi-language system. It saves the last choice, and keeps 
 public enum ENLanguage: String {
  case it = "it"
  case en = "en"
- case gr = "gr"
+ case el = "el"
  case es = "es"
 }
 ```
