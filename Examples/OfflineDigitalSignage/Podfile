@@ -3,7 +3,7 @@ source 'https://cdn.cocoapods.org/'
 
 target 'OfflineDigitalSignage' do
   use_frameworks!
-  pod 'ENDigitalSignage', '1.1.2'
+  pod 'ENDigitalSignage', '1.2.1'
 end
 
 post_install do |installer|
