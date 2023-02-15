@@ -15,6 +15,7 @@ It's the core module. This module is included in every submodule, and keeps comm
     - [ENNetworkConfig](#ENNetworkConfig)
     - [KeepScreenAlwaysOn](#KeepScreenAlwaysOn)
     - [ENMobileSDKEvent](#enmobilesdkevent)
+    - [Settings](#settings)
 
 ## COCOAPODS
 
@@ -117,7 +118,7 @@ public protocol ENAuthenticable {
 }
 ```
 
-It's a protocol which every module has to extend to be authenticated via [ENAuth](ENAuth/README).
+It's a protocol which every module has to extend to be authenticated via [ENAuth](../ENAuth/README.md).
 
 Once authenticated, every module is accessible through an utility variable defined on `ENMobileSDK instance`. For example, module `ENViewer` has a variable defined on ENMobileSDK, so that it's instance is accessible with: `ENMobileSDK.shared?.viewer`.
 
@@ -424,3 +425,17 @@ This function returns an `ENMobileSDKCallback`, so that you can unsubscribe to t
 ```swift
 ENMobileSDK.unsubscribe(callback: yourReturnedCallback)
 ```
+
+### Settings
+
+The `settings` class is used to change runtime and save in persistance area all network parameters in enmobilesdk and each submodules config.
+
+You can call it by using:
+
+```swift
+SettingsManager.shared.present(inViewController: UIViewController, dismissCompletion: @escaping (Bool) -> Void)
+```
+
+When called appears the viewController as shown below.
+
+![settings](Settings.png)
