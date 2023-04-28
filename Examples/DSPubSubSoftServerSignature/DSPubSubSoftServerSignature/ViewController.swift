@@ -10,6 +10,7 @@ import ENMobileSDK
 import ENDigitalSignage
 import ENSoftServer
 import ENViewer
+import ENPDFMiddleware
 import ENPubSub
 import ENSignatureBox
 class ViewController: UIViewController {
@@ -45,7 +46,7 @@ class ViewController: UIViewController {
 
     let certificateOwnerInfo = ENCertificateOwnerInfo(organization: "", countryCode: "", localityName: "", commonName: "")
 
-    let signatureBoxConfig = ENSignatureBoxConfig(signatureSourceType: .any, signatureImageConfig: .signatureAndTimestamp(watermarkReservedHeight: 0.4), useAlpha: true, signatureContentMode: .keepFieldRatio, enableSignatureOverwrite: true, updateDocumentStatusOnDismiss: false)
+    let signatureBoxConfig = ENSignatureBoxConfig(signatureSourceType: .any, signatureImageConfig: .signatureAndTimestamp(watermarkReservedHeight: 0.4), useAlpha: true, signatureContentMode: .keepFieldRatio, enableSignatureOverwrite: true)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,6 +91,7 @@ class ViewController: UIViewController {
                 .with(authenticable: ENSoftServer.with(softServerConfig: softServerConfig).build())
                 .with(authenticable: ENPubSub.with(pubsubConfig: pubSubConfig).build())
                 .with(authenticable: ENViewer.with(config: viewerConfig).build())
+                .with(authenticable: ENPDFMiddleware.with(config: ENPDFMiddlewareConfig(closeDocumentStatusOnConfirm: false, abortDocumentStatusOnCancel: false)).build())
                 .with(authenticable: ENSignatureBox.with(signatureBoxConfig: signatureBoxConfig).build())
                 .with(authenticableToEndBuilder:
                     ENDigitalSignage.with(digitalSignageConfig: digitalSignageConfig)
