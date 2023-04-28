@@ -32,7 +32,7 @@ class ViewController: UIViewController {
 
     let certificateOwnerInfo = ENCertificateOwnerInfo(organization: "", countryCode: "", localityName: "", commonName: "")
 
-    let signatureBoxConfig = ENSignatureBoxConfig(signatureSourceType: .any, signatureImageConfig: .signatureAndTimestamp(watermarkReservedHeight: 0.4), useAlpha: true, signatureContentMode: .keepFieldRatio, enableSignatureOverwrite: true, updateDocumentStatusOnDismiss: false)
+    let signatureBoxConfig = ENSignatureBoxConfig(signatureSourceType: .any, signatureImageConfig: .signatureAndTimestamp(watermarkReservedHeight: 0.4), useAlpha: true, signatureContentMode: .keepFieldRatio, enableSignatureOverwrite: true)
 
     let viewerConfig = ENViewerConfig(signFieldPlaceholder: .signerName)
 
@@ -76,6 +76,7 @@ class ViewController: UIViewController {
                 .with(responseCallback: { responseCallback in
                 print(responseCallback)
             })
+                .with(authenticable: ENPDFMiddleware.with(config: ENPDFMiddlewareConfig(closeDocumentStatusOnConfirm: false, abortDocumentStatusOnCancel: false)).build())
                 .with(authenticable: ENViewer.with(config: viewerConfig).build())
                 .with(authenticableToEndBuilder: ENSignatureBox.with(signatureBoxConfig: signatureBoxConfig).build())
                 .build()

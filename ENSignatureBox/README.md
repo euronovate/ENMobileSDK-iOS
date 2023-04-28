@@ -1,10 +1,10 @@
 ## ENSignatureBox
 
-![](https://badgen.net/badge/stable/1.2.1/blue)
+![](https://badgen.net/badge/stable/1.3.0/blue)
 
 ## COCOAPODS
 
-Add `pod 'ENSignatureBox', '1.2.1'` to your **PodFile**
+Add `pod 'ENSignatureBox', '1.3.0'` to your **PodFile**
 
 ## Basic usage
 
@@ -17,18 +17,16 @@ public let signatureImageConfig: ENSignatureImageConfig
 public let useAlpha: Bool
 var signatureContentMode: ENSignatureContentMode
 public let canEnableSignatureOverwrite: Bool
-public let updateDocumentStatusOnDismiss: Bool
 let layoutType: ENSignatureBoxType
 let showInFullScreen: Bool
 
 public struct ENSignatureBoxConfig {
-    public init(signatureSourceType: ENSignatureSourceType, signatureImageConfig: ENSignatureImageConfig, useAlpha: Bool, signatureContentMode: ENSignatureContentMode, enableSignatureOverwrite: Bool, updateDocumentStatusOnDismiss: Bool, layoutType: ENSignatureBoxType = .layout1, showInFullScreen: Bool = false) {
+    public init(signatureSourceType: ENSignatureSourceType, signatureImageConfig: ENSignatureImageConfig, useAlpha: Bool, signatureContentMode: ENSignatureContentMode, enableSignatureOverwrite: Bool, layoutType: ENSignatureBoxType = .layout1, showInFullScreen: Bool = false) {
 		self.signatureSourceType = signatureSourceType
 		self.signatureImageConfig = signatureImageConfig
 		self.useAlpha = useAlpha
 		self.signatureContentMode = signatureContentMode
 		self.canEnableSignatureOverwrite = enableSignatureOverwrite,
-		self.updateDocumentStatusOnDismiss = updateDocumentStatusOnDismiss
 		self.layoutType = layoutType
 		self.showInFullScreen = showInFullScreen
 	}
@@ -60,8 +58,6 @@ public enum ENSignatureContentMode {
 ```
 
 It defines the what ratio should be used in SignatureBox, if either keeping field ratio width and height, or using a default ratio. In second case it will center the signature image inside the field without stretching it.
-
-- `updateDocumentStatusOnDismiss`: If true, when dismissed viewer it updates the document status.
 
 - `ENSignatureBox` is available in 3 different layouts, and you can try/set them by overriding default param `layoutType` in `ENViewerConfig`.
 
