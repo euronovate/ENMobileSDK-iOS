@@ -1,10 +1,10 @@
 ## ENPubSub
 
-![](https://badgen.net/badge/stable/1.3.0/blue)
+![](https://badgen.net/badge/stable/1.3.2/blue)
 
 ## COCOAPODS
 
-Add `pod 'ENPubSub', '1.3.0'` to your **PodFile**
+Add `pod 'ENPubSub', '1.3.2'` to your **PodFile**
 
 PubSub system communication to let sign or make other actions in realtime.
 
