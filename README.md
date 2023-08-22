@@ -10,7 +10,7 @@ FOR ANY INFORMATION ABOUT, CONTACT US TO [customer[dot]sales[at]euronovate[dot]c
 
 ### Cocoapods
 
-These modules are on a indipendent `.podspec`, located [here](http://www.google.it).
+These modules are on a indipendent `.podspec`, located [here](https://github.com/euronovate/euronovate-pods).
 
 So you need to add this line in your Podfile:
 
