@@ -61,3 +61,4 @@ After that, you can import either module you need, just depending on what you ne
 - [1.3.0](Changelogs/1.3.0.md)
 - [1.3.1](Changelogs/1.3.1.md)
 - [1.3.2](Changelogs/1.3.2.md)
+- [1.3.3](Changelogs/1.3.3.md)
