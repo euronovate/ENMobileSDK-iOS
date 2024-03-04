@@ -6,4 +6,4 @@
 
 Add `pod 'ENBioLibraryObjC', '1.3.4'` to your **PodFile**
 
-Delegate module for xml bioData generation. Cooperates with [ENBioLibrary](ENBioLibrary/README.md).
+Delegate module for xml bioData generation. Cooperates with [ENBioLibrary](../ENBioLibrary/README.md).
