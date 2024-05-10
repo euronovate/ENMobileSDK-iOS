@@ -1,6 +1,6 @@
 ## ENMobileSDK (conventionally ENCore)
 
-![](https://badgen.net/badge/stable/1.3.4/blue)
+![](https://badgen.net/badge/stable/1.3.5/blue)
 
 It's the core module. This module is included in every submodule, and keeps common functions to avoid circular dependencies between them. So it's not necessary to add to every module.
 
@@ -21,7 +21,7 @@ It's the core module. This module is included in every submodule, and keeps comm
 
 ## COCOAPODS
 
-Add `pod 'ENMobileSDK', '1.3.4'` to your **PodFile**
+Add `pod 'ENMobileSDK', '1.3.5'` to your **PodFile**
 
 ## Basic usage
 
@@ -407,17 +407,25 @@ public enum ENMobileSDKEvent: String {
     case canConfirmDocument
     case disableConfirmDocument
     case didSignDocument
-    case signDocument
-    case signLocalDocument
+	case signDocument(guid: String? = nil, watermarkHeight: CGFloat? = nil, watermarkOrderedValues: [String]? = nil, forceSignatureType: DocumentSignatureType? = nil)
+    case signLocalDocument(document: ENDocum? = nil, watermarkHeight: CGFloat? = nil, watermarkOrderedValues: [String]? = nil, forceSignatureType: DocumentSignatureType? = nil)
     case abortedDocument
-    case closedDocument
+	case closedDocument(guid: String? = nil)
+    case cancelledDocument
     case viewerDidClose
+	case viewLocalDocument
     case viewDocument
     case viewerIsIdle
     case reachabilityChanged
 	case sdkInitialized
 }
 ```
+
+Some event have custom data parameters and an of such custom data are:
+* a custom height for the watermark information inside the signature image
+* a custom list of strings for the watermark information inside the signature image
+* the type of the signature (FES/FEA)
+
 
 As I said before, these are implemented for internal use, but you can subscribe to them and get events too.
 
