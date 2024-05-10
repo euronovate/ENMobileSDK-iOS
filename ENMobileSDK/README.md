@@ -406,18 +406,18 @@ public enum ENMobileSDKEvent: String {
     case didEnterBackground
     case canConfirmDocument
     case disableConfirmDocument
-    case didSignDocument
-	case signDocument(guid: String? = nil, watermarkHeight: CGFloat? = nil, watermarkOrderedValues: [String]? = nil, forceSignatureType: DocumentSignatureType? = nil)
+	case didSignDocument
+    case signDocument(guid: String? = nil, watermarkHeight: CGFloat? = nil, watermarkOrderedValues: [String]? = nil, forceSignatureType: DocumentSignatureType? = nil)
     case signLocalDocument(document: ENDocum? = nil, watermarkHeight: CGFloat? = nil, watermarkOrderedValues: [String]? = nil, forceSignatureType: DocumentSignatureType? = nil)
     case abortedDocument
-	case closedDocument(guid: String? = nil)
+    case closedDocument(guid: String? = nil)
     case cancelledDocument
     case viewerDidClose
-	case viewLocalDocument
+    case viewLocalDocument
     case viewDocument
     case viewerIsIdle
     case reachabilityChanged
-	case sdkInitialized
+    case sdkInitialized
 }
 ```
 
