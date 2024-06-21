@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.3.6
+
+- didSignDocument SDK carries the GUID of the document and the image (UIImage) of the newly applied signature
+
 ## v1.3.5
 
 - add custom FES and FEA type into signDocument/signLocalDocument events
