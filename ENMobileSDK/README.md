@@ -406,7 +406,7 @@ public enum ENMobileSDKEvent: String {
     case didEnterBackground
     case canConfirmDocument
     case disableConfirmDocument
-	case didSignDocument
+    case didSignDocument(guid: String? = nil, signatureImage: UIImage? = nil)
     case signDocument(guid: String? = nil, watermarkHeight: CGFloat? = nil, watermarkOrderedValues: [String]? = nil, forceSignatureType: DocumentSignatureType? = nil)
     case signLocalDocument(document: ENDocum? = nil, watermarkHeight: CGFloat? = nil, watermarkOrderedValues: [String]? = nil, forceSignatureType: DocumentSignatureType? = nil)
     case abortedDocument
@@ -432,16 +432,32 @@ As I said before, these are implemented for internal use, but you can subscribe 
 To subscribe to an event, just call this function:
 
 ```swift
-ENMobileSDK.subscribe(toSocketEvent: .closedDocument) { closedDocumentData in
+let yourReturnedCallBack = ENMobileSDK.subscribe(toSocketEvent: .closedDocument) { closedDocumentData in
 
 }
 ```
+
 
 This function returns an `ENMobileSDKCallback`, so that you can unsubscribe to this event whenever you want, by calling:
 
 ```swift
 ENMobileSDK.unsubscribe(callback: yourReturnedCallback)
 ```
+
+#### Examples
+###### didSignDocument(guid: String? = nil, signatureImage: UIImage? = nil)
+
+The didSignDocument event is triggered whenever a signature is successfully applied to a document. The event carries the GUID of the document and the image (UIImage) of the newly applied signature.
+
+```swift
+let callback = ENMobileSDK.subscribe(toSocketEvent: .didSignDocument()) { didSign in
+    if case .didSignDocument(let documentGUID, let signatureImage) = didSign {
+		// Handle the event here
+    }
+}
+
+```
+
 
 ### Settings
 
