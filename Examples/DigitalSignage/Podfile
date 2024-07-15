@@ -1,3 +1,4 @@
+platform :ios, '14.0'
 source 'https://github.com/euronovate/euronovate-pods.git'
 source 'https://cdn.cocoapods.org/'
 
@@ -8,6 +9,26 @@ end
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|
+
+    # Xcode 14.3 breaks pods with deployment target below iOS 11
+    # https://developer.apple.com/forums/thread/728021
+    # https://stackoverflow.com/a/75729977/2699091
+    # change deployment target only for the pods that we know that don't work with Xcode 14.3
+    if target.name == 'AnyCodable-FlightSchool' ||
+      target.name == 'BlueCryptor' ||
+      target.name == 'BlueRSA' ||
+      target.name == 'KituraContracts' ||
+      target.name == 'LoggerAPI' ||
+      target.name == 'Logging' ||
+      target.name == 'ReachabilitySwift' ||
+      target.name == 'SwiftKeychainWrapper' ||
+      target.name == 'SwiftSignalRClient' ||
+      target.name == 'XMLCoder'
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+      end
+    end
+
     target.build_configurations.each do |config|
       config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
     end
