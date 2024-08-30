@@ -1,6 +1,6 @@
 ## ENMobileSDK (conventionally ENCore)
 
-![](https://badgen.net/badge/stable/1.3.6/blue)
+![](https://badgen.net/badge/stable/1.3.7/blue)
 
 It's the core module. This module is included in every submodule, and keeps common functions to avoid circular dependencies between them. So it's not necessary to add to every module.
 
@@ -21,7 +21,7 @@ It's the core module. This module is included in every submodule, and keeps comm
 
 ## COCOAPODS
 
-Add `pod 'ENMobileSDK', '1.3.6'` to your **PodFile**
+Add `pod 'ENMobileSDK', '1.3.7'` to your **PodFile**
 
 ## Basic usage
 
@@ -406,7 +406,7 @@ public enum ENMobileSDKEvent: String {
     case didEnterBackground
     case canConfirmDocument
     case disableConfirmDocument
-    case didSignDocument(guid: String? = nil, signatureImage: UIImage? = nil)
+    case didSignDocument(documentGuid: String? = nil, signatureName: String? = nil, signatureImage: UIImage? = nil)
     case signDocument(guid: String? = nil, watermarkHeight: CGFloat? = nil, watermarkOrderedValues: [String]? = nil, forceSignatureType: DocumentSignatureType? = nil)
     case signLocalDocument(document: ENDocum? = nil, watermarkHeight: CGFloat? = nil, watermarkOrderedValues: [String]? = nil, forceSignatureType: DocumentSignatureType? = nil)
     case abortedDocument
@@ -445,13 +445,13 @@ ENMobileSDK.unsubscribe(callback: yourReturnedCallback)
 ```
 
 #### Examples
-###### didSignDocument(guid: String? = nil, signatureImage: UIImage? = nil)
+###### didSignDocument(documentGuid: String? = nil, signatureName: String? = nil, signatureImage: UIImage? = nil)
 
-The didSignDocument event is triggered whenever a signature is successfully applied to a document. The event carries the GUID of the document and the image (UIImage) of the newly applied signature.
+The didSignDocument event is triggered whenever a signature is successfully applied to a document. The event carries the GUID of the document and the image (UIImage) of the newly applied signature with the signature name.
 
 ```swift
 let callback = ENMobileSDK.subscribe(toSocketEvent: .didSignDocument()) { didSign in
-    if case .didSignDocument(let documentGUID, let signatureImage) = didSign {
+    if case .didSignDocument(let documentGuid, let signatureName, let signatureImage) = didSign {
 		// Handle the event here
     }
 }

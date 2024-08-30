@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.3.7
+
+- refactor didSignDocument event: guid parameter name changed to documentGuid, add signatureName to identify the signatureImage
+
 ## v1.3.6
 
 - didSignDocument SDK carries the GUID of the document and the image (UIImage) of the newly applied signature
