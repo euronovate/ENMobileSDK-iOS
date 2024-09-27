@@ -8,7 +8,7 @@ FOR ANY INFORMATION ABOUT, CONTACT US TO [customer[dot]sales[at]euronovate[dot]c
 
 ## OS support
 - iOS minimum supported version: 14.0
-- iOS maximum supported version: 16.0
+- iOS maximum supported version: 17.0
 
 ## Installation
 
