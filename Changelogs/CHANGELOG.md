@@ -1,69 +1,76 @@
 # Changelog
 
-## v1.3.7
+## v 1.3.8
+
+- implementation of FES with OTP signature
+- fix the management of default textfields and checkboxes
+- better management of ABORT/CLOSE documents
+- better management of textfields and checkboxes for already signed documents
+
+## v 1.3.7
 
 - refactor didSignDocument event: guid parameter name changed to documentGuid, add signatureName to identify the signatureImage
 
-## v1.3.6
+## v 1.3.6
 
 - didSignDocument SDK carries the GUID of the document and the image (UIImage) of the newly applied signature
 
-## v1.3.5
+## v 1.3.5
 
 - add custom FES and FEA type into signDocument/signLocalDocument events
 - add custom watermark height and list of strings into signDocument/signLocalDocument events
 - fix textfields and checkbox management
 
-## v1.3.4
+## v 1.3.4
 
 - add support for Apple Silicon simulator
 
-## v1.3.3
+## v 1.3.3
 
 - fix signatures priority check
 
-## v1.3.2
+## v 1.3.2
 
 - update pdf viewer to 1.5.22 to fix checkbox rendering for 1x1 and 2x2 checkboxes
 - update ENLibPdf to 2.3.1
 - add signatures priority check
 - add acrofields mandatory check
 
-## v1.3.1
+## v 1.3.1
 
 -   fix LogServer events
 
-## v1.3.0
+## v 1.3.0
 
 -   add Use Cases
 -   add new configuration object for PDFMiddleware
 
-## v1.2.1
+## v 1.2.1
 
 - Integrated ENLibPdf 2.1.6    
 - improved online acrofield management
 - PadES B-B signature
 - Minor bugs fixed
 
-## v1.2.0
+## v 1.2.0
 
 -  Optimized textbox, checkbox and signatures elaboration. 
 - Bug fixes
 
-## v1.1.2
+## v 1.1.2
 
 ### ENSoftServer:
 
 - Resolved a bug where hash and documentSize values weren't updated after acquire sign
 
-## v1.1.1
+## v 1.1.1
 
 ### ENSignatureBox:
 
 - Added custom button labels for graphologist theme
 - Removed clear signature on signatureBox errors
 
-## v1.1.0
+## v 1.1.0
 
 ### ENSignatureBox:
 
@@ -71,7 +78,7 @@
 - Added graphologist theme for signatureBox
 - Added debug mode for signatureBox
 
-## v1.0.3
+## v 1.0.3
 
 ### Core:
 
@@ -94,7 +101,7 @@
 - Added new layout to show Viewer's buttons.
 - Added detail about appVersion (if set in core's config)
 
-## v1.0.1
+## v 1.0.1
 
 ### Core:
 - Added list document alert

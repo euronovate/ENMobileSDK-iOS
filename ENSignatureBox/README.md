@@ -1,10 +1,10 @@
 ## ENSignatureBox
 
-![](https://badgen.net/badge/stable/1.3.7/blue)
+![](https://badgen.net/badge/stable/1.3.8/blue)
 
 ## COCOAPODS
 
-Add `pod 'ENSignatureBox', '1.3.7'` to your **PodFile**
+Add `pod 'ENSignatureBox', '1.3.8'` to your **PodFile**
 
 ## Basic usage
 
@@ -60,6 +60,8 @@ public enum ENSignatureContentMode {
 It defines the what ratio should be used in SignatureBox, if either keeping field ratio width and height, or using a default ratio. In second case it will center the signature image inside the field without stretching it.
 
 - `ENSignatureBox` is available in 3 different layouts, and you can try/set them by overriding default param `layoutType` in `ENViewerConfig`.
+    - `layout1`: the default layout
+    - `layout2`: a layout specifically designed for tablets
 
 ```swift
 public enum ENSignatureBoxType {

@@ -1,10 +1,10 @@
 ## ENViewer
 
-![](https://badgen.net/badge/stable/1.3.7/blue)
+![](https://badgen.net/badge/stable/1.3.8/blue)
 
 ## COCOAPODS
 
-Add `pod 'ENViewer', '1.3.7'` to your **PodFile**
+Add `pod 'ENViewer', '1.3.8'` to your **PodFile**
 
 Module which let you see a PDF from either local source or SoftServer.
 
@@ -42,4 +42,13 @@ public enum SignFieldPlaceholder {
 }
 ```
 
-`ENViewer` is available in 2 different layouts, and you can try/set them by overriding default param `viewerType` in `ENViewerConfig`.
+- `ENViewer` is available in 2 different layouts, and you can try/set them by overriding default param `viewerType` in `ENViewerConfig`.
+    - `layout1`: the default layout
+    - `layout2`: a layout specifically designed for tablets
+
+```swift
+public enum ENViewerType {
+    case layout1
+    case layout2
+}
+```

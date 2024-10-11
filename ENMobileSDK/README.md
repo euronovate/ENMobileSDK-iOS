@@ -1,6 +1,6 @@
 ## ENMobileSDK (conventionally ENCore)
 
-![](https://badgen.net/badge/stable/1.3.7/blue)
+![](https://badgen.net/badge/stable/1.3.8/blue)
 
 It's the core module. This module is included in every submodule, and keeps common functions to avoid circular dependencies between them. So it's not necessary to add to every module.
 
@@ -21,7 +21,7 @@ It's the core module. This module is included in every submodule, and keeps comm
 
 ## COCOAPODS
 
-Add `pod 'ENMobileSDK', '1.3.7'` to your **PodFile**
+Add `pod 'ENMobileSDK', '1.3.8'` to your **PodFile**
 
 ## Basic usage
 
@@ -89,7 +89,7 @@ public enum ENLanguage: String {
  case it = "it"
  case en = "en"
  case el = "el"
- case es = "es"
+ case jor = "jor"
 }
 ```
 
@@ -135,6 +135,42 @@ You'll se 2 different builder declarations for Authenticable:
 ```
 
 The first one is used for the first authenticables you build, the last one is necessary for the last one, so that you can go on building your `ENMobileSDK`.
+
+**Example**
+
+The SDK has an API to manage the dossier:
+
+`findDossier` -> Retrieve dossier metadata given its GUID.
+
+```swift
+ENMobileSDK.shared?.softServer?.findDossier(dossierGuid: "GUID")
+``` 
+
+`findDocumentsInDossier` -> Retrieve all the documents in a dossier given the dossier's GUID.
+
+```swift
+ENMobileSDK.shared?.softServer?.findDocumentsInDossier(dossierGuid:  "GUID")
+``` 
+
+> Please note that all the functions for the dossier's API could throw an exception that has to be managed.
+
+### SignatureMode
+
+`defaultSignatureMode` available in `ENMobileSDKConfig`, is used to set up the default mode that the SDK use to sign a signature field. By default this is a **graphometric** signature for the entire document, but a signature by **OTP** can be set for the document.
+
+```swift
+public enum SignatureMode: Equatable, Hashable {
+    case graphometric
+    case otpByDocumentGuid(numberOfDigits: Int = 4, defaultHiddenDigits: Bool = true)
+
+	...
+}
+```
+
+> Note that when a signature by OTP is set:
+> * as of now the final signature will be a **FES** signature
+> * the OTP signature is based on the GUID of the document, so there has to be a properly configured SoftServer instance with all the logic, based on the document's GUID, to send the otp to the right recipient.
+> * the OTP signature is not supported for local signatures
 
 ## Theme
 
@@ -220,13 +256,26 @@ public protocol ENDigitalSignageTheme {
 ```swift
 public protocol ENViewerTheme {
 	var leftBar: ENBackgroundStyle { get }
-	var rightBar: ENBackgroundStyle { get }
-	var title: ENTextStyle { get }
-	var subtitle: ENTextStyle { get }
-	var enabledIcon: TintStyle { get }
-	var disabledIcon: TintStyle { get }
-	var confirm: ENBackgroundStyle { get }
-	var abort: ENBackgroundStyle { get }
+    var rightBar: ENBackgroundStyle { get }
+    var title: ENTextStyle { get }
+    var subtitle: ENTextStyle { get }
+    var enabledIcon: TintStyle { get }
+    var fillEnabledIcon: TintStyle { get }
+    var disabledIcon: TintStyle { get }
+    var disabledContainer: ENBackgroundStyle { get }
+    var confirm: ENBackgroundStyle { get }
+    var abort: ENBackgroundStyle { get }
+    var placeholder: ENLabelStyle { get }
+    var confirmContainer: ENBackgroundStyle { get }
+    var abortContainer: ENBackgroundStyle { get }
+    var pinPadStyle: ENPinPadInputViewStyle { get }
+    var pinPadButtonBackgroundColor: TintStyle { get }
+    var pinPadButtonLabelColor: TintStyle { get }
+    var pinPadButtonBorderColor: TintStyle { get }
+    var pinPadActionButtonLabelColor: TintStyle { get }
+    var pinPadActionButtonBackgroundColor: TintStyle { get }
+    var otpLabelColor: TintStyle { get }
+    var pinPadButtonSpacing: Int? { get }
 }
 ```
 
