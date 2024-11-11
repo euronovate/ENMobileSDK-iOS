@@ -230,8 +230,8 @@ struct ContentView: View {
                                                                       viewDocumentAfterClose: false)).build())
             .with(authenticableToEndBuilder:
                     ENDigitalSignage.with(digitalSignageConfig:
-                                            ENDigitalSignageConfig(baseURL: Configuration.enauthUrl,
-                                                                   licenseCode: Configuration.licenseKey,
+                                            ENDigitalSignageConfig(baseURL: Configuration.digitalSignageUrl,
+                                                                   licenseCode: Configuration.digitalSignageLicenseCode,
                                                                    ctaConfig: .init(component: .directlyOnDS(event: ENCTAEventType.easterEgg(numberOfTaps: 2)),
                                                                                     presentationType: .documentList(documents: [
                                                                                         ("1 firma obbligatoria", "Documento monopagina e monofirma (bookmarks)", "1-mandatory")
