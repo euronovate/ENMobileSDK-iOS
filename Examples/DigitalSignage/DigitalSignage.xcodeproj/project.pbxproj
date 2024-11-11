@@ -3,91 +3,71 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A7ABE1327EA114D00464E56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7ABE1227EA114D00464E56 /* AppDelegate.swift */; };
-		6A7ABE1527EA114D00464E56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7ABE1427EA114D00464E56 /* SceneDelegate.swift */; };
-		6A7ABE1727EA114D00464E56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7ABE1627EA114D00464E56 /* ViewController.swift */; };
-		6A7ABE1A27EA114D00464E56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7ABE1827EA114D00464E56 /* Main.storyboard */; };
-		6A7ABE1C27EA114E00464E56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A7ABE1B27EA114E00464E56 /* Assets.xcassets */; };
-		6A7ABE1F27EA114E00464E56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7ABE1D27EA114E00464E56 /* LaunchScreen.storyboard */; };
-		DA8D5A1895AAE68F77BB313A /* Pods_DigitalSignage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB396202D7A433BD917E6E7C /* Pods_DigitalSignage.framework */; };
+		00160C73B842A696BC6A66C1 /* Pods_DigitalSignage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844BF68099396E771B28FF9F /* Pods_DigitalSignage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D080829773411B7AC909EE6 /* Pods-DigitalSignage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalSignage.debug.xcconfig"; path = "Target Support Files/Pods-DigitalSignage/Pods-DigitalSignage.debug.xcconfig"; sourceTree = "<group>"; };
-		4D4B0C50E6C1080A1192ABAF /* Pods-DigitalSignage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalSignage.release.xcconfig"; path = "Target Support Files/Pods-DigitalSignage/Pods-DigitalSignage.release.xcconfig"; sourceTree = "<group>"; };
-		6A7ABE0F27EA114D00464E56 /* DigitalSignage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalSignage.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A7ABE1227EA114D00464E56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6A7ABE1427EA114D00464E56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6A7ABE1627EA114D00464E56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6A7ABE1927EA114D00464E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6A7ABE1B27EA114E00464E56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6A7ABE1E27EA114E00464E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6A7ABE2027EA114E00464E56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB396202D7A433BD917E6E7C /* Pods_DigitalSignage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigitalSignage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B7F06A64C1091197B98873 /* Pods-DigitalSignage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalSignage.debug.xcconfig"; path = "Target Support Files/Pods-DigitalSignage/Pods-DigitalSignage.debug.xcconfig"; sourceTree = "<group>"; };
+		844BF68099396E771B28FF9F /* Pods_DigitalSignage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigitalSignage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC9C3EDD2CDCD197004122F9 /* DigitalSignage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalSignage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2084A1B7D2380CDF3D6C428 /* Pods-DigitalSignage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalSignage.release.xcconfig"; path = "Target Support Files/Pods-DigitalSignage/Pods-DigitalSignage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AC9C3EDF2CDCD197004122F9 /* DigitalSignage */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DigitalSignage;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
-		6A7ABE0C27EA114D00464E56 /* Frameworks */ = {
+		AC9C3EDA2CDCD197004122F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA8D5A1895AAE68F77BB313A /* Pods_DigitalSignage.framework in Frameworks */,
+				00160C73B842A696BC6A66C1 /* Pods_DigitalSignage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6A7ABE0627EA114D00464E56 = {
+		4F91CDA116DB858E2837F6D6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6A7ABE1127EA114D00464E56 /* DigitalSignage */,
-				6A7ABE1027EA114D00464E56 /* Products */,
-				A6AA4E738888C9D1D3E35C90 /* Pods */,
-				E637498ED9092C341769B805 /* Frameworks */,
+				11B7F06A64C1091197B98873 /* Pods-DigitalSignage.debug.xcconfig */,
+				C2084A1B7D2380CDF3D6C428 /* Pods-DigitalSignage.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC9C3ED42CDCD197004122F9 = {
+			isa = PBXGroup;
+			children = (
+				AC9C3EDF2CDCD197004122F9 /* DigitalSignage */,
+				AC9C3EDE2CDCD197004122F9 /* Products */,
+				4F91CDA116DB858E2837F6D6 /* Pods */,
+				F521AB61A4A312618AD62A32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		6A7ABE1027EA114D00464E56 /* Products */ = {
+		AC9C3EDE2CDCD197004122F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A7ABE0F27EA114D00464E56 /* DigitalSignage.app */,
+				AC9C3EDD2CDCD197004122F9 /* DigitalSignage.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6A7ABE1127EA114D00464E56 /* DigitalSignage */ = {
+		F521AB61A4A312618AD62A32 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6A7ABE1227EA114D00464E56 /* AppDelegate.swift */,
-				6A7ABE1427EA114D00464E56 /* SceneDelegate.swift */,
-				6A7ABE1627EA114D00464E56 /* ViewController.swift */,
-				6A7ABE1827EA114D00464E56 /* Main.storyboard */,
-				6A7ABE1B27EA114E00464E56 /* Assets.xcassets */,
-				6A7ABE1D27EA114E00464E56 /* LaunchScreen.storyboard */,
-				6A7ABE2027EA114E00464E56 /* Info.plist */,
-			);
-			path = DigitalSignage;
-			sourceTree = "<group>";
-		};
-		A6AA4E738888C9D1D3E35C90 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1D080829773411B7AC909EE6 /* Pods-DigitalSignage.debug.xcconfig */,
-				4D4B0C50E6C1080A1192ABAF /* Pods-DigitalSignage.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		E637498ED9092C341769B805 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AB396202D7A433BD917E6E7C /* Pods_DigitalSignage.framework */,
+				844BF68099396E771B28FF9F /* Pods_DigitalSignage.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,73 +75,75 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6A7ABE0E27EA114D00464E56 /* DigitalSignage */ = {
+		AC9C3EDC2CDCD197004122F9 /* DigitalSignage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A7ABE2327EA114E00464E56 /* Build configuration list for PBXNativeTarget "DigitalSignage" */;
+			buildConfigurationList = AC9C3EEB2CDCD198004122F9 /* Build configuration list for PBXNativeTarget "DigitalSignage" */;
 			buildPhases = (
-				98439F1CFEB247493E0C7390 /* [CP] Check Pods Manifest.lock */,
-				6A7ABE0B27EA114D00464E56 /* Sources */,
-				6A7ABE0C27EA114D00464E56 /* Frameworks */,
-				6A7ABE0D27EA114D00464E56 /* Resources */,
-				ADFA298B6837D6246E815948 /* [CP] Embed Pods Frameworks */,
+				2B91CFBF6983874FF4F5AA26 /* [CP] Check Pods Manifest.lock */,
+				AC9C3ED92CDCD197004122F9 /* Sources */,
+				AC9C3EDA2CDCD197004122F9 /* Frameworks */,
+				AC9C3EDB2CDCD197004122F9 /* Resources */,
+				692E3F05722A7F039D206B6C /* [CP] Embed Pods Frameworks */,
+				959CA78EC436927150CC4210 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				AC9C3EDF2CDCD197004122F9 /* DigitalSignage */,
+			);
 			name = DigitalSignage;
 			productName = DigitalSignage;
-			productReference = 6A7ABE0F27EA114D00464E56 /* DigitalSignage.app */;
+			productReference = AC9C3EDD2CDCD197004122F9 /* DigitalSignage.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6A7ABE0727EA114D00464E56 /* Project object */ = {
+		AC9C3ED52CDCD197004122F9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					6A7ABE0E27EA114D00464E56 = {
-						CreatedOnToolsVersion = 13.3;
+					AC9C3EDC2CDCD197004122F9 = {
+						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
-			buildConfigurationList = 6A7ABE0A27EA114D00464E56 /* Build configuration list for PBXProject "DigitalSignage" */;
-			compatibilityVersion = "Xcode 13.0";
+			buildConfigurationList = AC9C3ED82CDCD197004122F9 /* Build configuration list for PBXProject "DigitalSignage" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 6A7ABE0627EA114D00464E56;
-			productRefGroup = 6A7ABE1027EA114D00464E56 /* Products */;
+			mainGroup = AC9C3ED42CDCD197004122F9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AC9C3EDE2CDCD197004122F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A7ABE0E27EA114D00464E56 /* DigitalSignage */,
+				AC9C3EDC2CDCD197004122F9 /* DigitalSignage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6A7ABE0D27EA114D00464E56 /* Resources */ = {
+		AC9C3EDB2CDCD197004122F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A7ABE1F27EA114E00464E56 /* LaunchScreen.storyboard in Resources */,
-				6A7ABE1C27EA114E00464E56 /* Assets.xcassets in Resources */,
-				6A7ABE1A27EA114D00464E56 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		98439F1CFEB247493E0C7390 /* [CP] Check Pods Manifest.lock */ = {
+		2B91CFBF6983874FF4F5AA26 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -183,7 +165,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ADFA298B6837D6246E815948 /* [CP] Embed Pods Frameworks */ = {
+		692E3F05722A7F039D206B6C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -200,48 +182,44 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigitalSignage/Pods-DigitalSignage-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		959CA78EC436927150CC4210 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigitalSignage/Pods-DigitalSignage-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigitalSignage/Pods-DigitalSignage-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigitalSignage/Pods-DigitalSignage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6A7ABE0B27EA114D00464E56 /* Sources */ = {
+		AC9C3ED92CDCD197004122F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A7ABE1727EA114D00464E56 /* ViewController.swift in Sources */,
-				6A7ABE1327EA114D00464E56 /* AppDelegate.swift in Sources */,
-				6A7ABE1527EA114D00464E56 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		6A7ABE1827EA114D00464E56 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6A7ABE1927EA114D00464E56 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6A7ABE1D27EA114E00464E56 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6A7ABE1E27EA114E00464E56 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		6A7ABE2127EA114E00464E56 /* Debug */ = {
+		AC9C3EE92CDCD198004122F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -271,7 +249,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -285,23 +264,25 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		6A7ABE2227EA114E00464E56 /* Release */ = {
+		AC9C3EEA2CDCD198004122F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -331,7 +312,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -339,37 +321,41 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		6A7ABE2427EA114E00464E56 /* Debug */ = {
+		AC9C3EEC2CDCD198004122F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D080829773411B7AC909EE6 /* Pods-DigitalSignage.debug.xcconfig */;
+			baseConfigurationReference = 11B7F06A64C1091197B98873 /* Pods-DigitalSignage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DigitalSignage/Preview Content\"";
+				DEVELOPMENT_TEAM = R4V4NUQ9JG;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DigitalSignage/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.DigitalSignage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DigitalSignage.DigitalSignage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -377,27 +363,31 @@
 			};
 			name = Debug;
 		};
-		6A7ABE2527EA114E00464E56 /* Release */ = {
+		AC9C3EED2CDCD198004122F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D4B0C50E6C1080A1192ABAF /* Pods-DigitalSignage.release.xcconfig */;
+			baseConfigurationReference = C2084A1B7D2380CDF3D6C428 /* Pods-DigitalSignage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DigitalSignage/Preview Content\"";
+				DEVELOPMENT_TEAM = R4V4NUQ9JG;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DigitalSignage/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.DigitalSignage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DigitalSignage.DigitalSignage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -408,25 +398,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A7ABE0A27EA114D00464E56 /* Build configuration list for PBXProject "DigitalSignage" */ = {
+		AC9C3ED82CDCD197004122F9 /* Build configuration list for PBXProject "DigitalSignage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6A7ABE2127EA114E00464E56 /* Debug */,
-				6A7ABE2227EA114E00464E56 /* Release */,
+				AC9C3EE92CDCD198004122F9 /* Debug */,
+				AC9C3EEA2CDCD198004122F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A7ABE2327EA114E00464E56 /* Build configuration list for PBXNativeTarget "DigitalSignage" */ = {
+		AC9C3EEB2CDCD198004122F9 /* Build configuration list for PBXNativeTarget "DigitalSignage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6A7ABE2427EA114E00464E56 /* Debug */,
-				6A7ABE2527EA114E00464E56 /* Release */,
+				AC9C3EEC2CDCD198004122F9 /* Debug */,
+				AC9C3EED2CDCD198004122F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6A7ABE0727EA114D00464E56 /* Project object */;
+	rootObject = AC9C3ED52CDCD197004122F9 /* Project object */;
 }
