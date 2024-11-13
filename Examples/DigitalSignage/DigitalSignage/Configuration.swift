@@ -9,10 +9,10 @@ import Foundation
 
 struct Configuration {
 
-    static let digitalSignageUrl = "reaplace with digitalSignageUrl"
-    static let digitalSignageLicenseCode = "reaplace with digitalSignageLicenseCode"
-    static let enauthUrl = "reaplace with enauthUrl"
-    static let licenseKey = "reaplace with licenseKey"
-    static let jwt = "reaplace with jwt"
+    static let digitalSignageUrl = "replace with digitalSignageUrl"
+    static let digitalSignageLicenseCode = "repalce with digitalSignageLicenseCode"
+    static let enauthUrl = "replace with enauthUrl"
+    static let licenseKey = "replace with licenseKey"
+    static let jwt = "replace with jwt"
 
 }
