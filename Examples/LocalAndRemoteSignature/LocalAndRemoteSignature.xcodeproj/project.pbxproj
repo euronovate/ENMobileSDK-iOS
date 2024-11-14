@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BD64A7D9FB1BF7DEECF78C0 /* Pods_LocalAndRemoteSignature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ECF8196B143A2AA9478C3B /* Pods_LocalAndRemoteSignature.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11B7F06A64C1091197B98873 /* Pods-DigitalSignage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalSignage.debug.xcconfig"; path = "Target Support Files/Pods-DigitalSignage/Pods-DigitalSignage.debug.xcconfig"; sourceTree = "<group>"; };
+		17B7B502F343D73838B5CE7F /* Pods-LocalAndRemoteSignature.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalAndRemoteSignature.release.xcconfig"; path = "Target Support Files/Pods-LocalAndRemoteSignature/Pods-LocalAndRemoteSignature.release.xcconfig"; sourceTree = "<group>"; };
+		47D18B4EAAD49FA0BE37A3ED /* Pods-DossierWithFeaOtpSignature.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DossierWithFeaOtpSignature.debug.xcconfig"; path = "Target Support Files/Pods-DossierWithFeaOtpSignature/Pods-DossierWithFeaOtpSignature.debug.xcconfig"; sourceTree = "<group>"; };
+		5A6F2D3E3ADA2758851375B1 /* Pods-DossierWithFeaOtpSignature.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DossierWithFeaOtpSignature.release.xcconfig"; path = "Target Support Files/Pods-DossierWithFeaOtpSignature/Pods-DossierWithFeaOtpSignature.release.xcconfig"; sourceTree = "<group>"; };
+		6114F198E0278464B07FF82C /* Pods-DossierWithFesOtpSignature.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DossierWithFesOtpSignature.debug.xcconfig"; path = "Target Support Files/Pods-DossierWithFesOtpSignature/Pods-DossierWithFesOtpSignature.debug.xcconfig"; sourceTree = "<group>"; };
+		63ECF8196B143A2AA9478C3B /* Pods_LocalAndRemoteSignature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalAndRemoteSignature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC9C3EDD2CDCD197004122F9 /* LocalAndRemoteSignature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalAndRemoteSignature.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2084A1B7D2380CDF3D6C428 /* Pods-DigitalSignage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalSignage.release.xcconfig"; path = "Target Support Files/Pods-DigitalSignage/Pods-DigitalSignage.release.xcconfig"; sourceTree = "<group>"; };
+		D8CA7B299589F10BF6073D10 /* Pods-LocalAndRemoteSignature.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalAndRemoteSignature.debug.xcconfig"; path = "Target Support Files/Pods-LocalAndRemoteSignature/Pods-LocalAndRemoteSignature.debug.xcconfig"; sourceTree = "<group>"; };
+		FA1CA9D392CDE7574F13B024 /* Pods-DossierWithFesOtpSignature.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DossierWithFesOtpSignature.release.xcconfig"; path = "Target Support Files/Pods-DossierWithFesOtpSignature/Pods-DossierWithFesOtpSignature.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AC5FB21D2CE4E719006070AC /* Exceptions for "LocalAndRemoteSignature" folder in "LocalAndRemoteSignature" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AC9C3EDC2CDCD197004122F9 /* LocalAndRemoteSignature */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AC9C3EDF2CDCD197004122F9 /* LocalAndRemoteSignature */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AC5FB21D2CE4E719006070AC /* Exceptions for "LocalAndRemoteSignature" folder in "LocalAndRemoteSignature" target */,
+			);
+			path = LocalAndRemoteSignature;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC9C3EDA2CDCD197004122F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD64A7D9FB1BF7DEECF78C0 /* Pods_LocalAndRemoteSignature.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F91CDA116DB858E2837F6D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11B7F06A64C1091197B98873 /* Pods-DigitalSignage.debug.xcconfig */,
+				C2084A1B7D2380CDF3D6C428 /* Pods-DigitalSignage.release.xcconfig */,
+				47D18B4EAAD49FA0BE37A3ED /* Pods-DossierWithFeaOtpSignature.debug.xcconfig */,
+				5A6F2D3E3ADA2758851375B1 /* Pods-DossierWithFeaOtpSignature.release.xcconfig */,
+				6114F198E0278464B07FF82C /* Pods-DossierWithFesOtpSignature.debug.xcconfig */,
+				FA1CA9D392CDE7574F13B024 /* Pods-DossierWithFesOtpSignature.release.xcconfig */,
+				D8CA7B299589F10BF6073D10 /* Pods-LocalAndRemoteSignature.debug.xcconfig */,
+				17B7B502F343D73838B5CE7F /* Pods-LocalAndRemoteSignature.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC9C3ED42CDCD197004122F9 = {
+			isa = PBXGroup;
+			children = (
+				AC9C3EDF2CDCD197004122F9 /* LocalAndRemoteSignature */,
+				AC9C3EDE2CDCD197004122F9 /* Products */,
+				4F91CDA116DB858E2837F6D6 /* Pods */,
+				F521AB61A4A312618AD62A32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC9C3EDE2CDCD197004122F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC9C3EDD2CDCD197004122F9 /* LocalAndRemoteSignature.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F521AB61A4A312618AD62A32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63ECF8196B143A2AA9478C3B /* Pods_LocalAndRemoteSignature.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC9C3EDC2CDCD197004122F9 /* LocalAndRemoteSignature */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC9C3EEB2CDCD198004122F9 /* Build configuration list for PBXNativeTarget "LocalAndRemoteSignature" */;
+			buildPhases = (
+				2B91CFBF6983874FF4F5AA26 /* [CP] Check Pods Manifest.lock */,
+				AC9C3ED92CDCD197004122F9 /* Sources */,
+				AC9C3EDA2CDCD197004122F9 /* Frameworks */,
+				AC9C3EDB2CDCD197004122F9 /* Resources */,
+				692E3F05722A7F039D206B6C /* [CP] Embed Pods Frameworks */,
+				959CA78EC436927150CC4210 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AC9C3EDF2CDCD197004122F9 /* LocalAndRemoteSignature */,
+			);
+			name = LocalAndRemoteSignature;
+			productName = DigitalSignage;
+			productReference = AC9C3EDD2CDCD197004122F9 /* LocalAndRemoteSignature.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC9C3ED52CDCD197004122F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					AC9C3EDC2CDCD197004122F9 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = AC9C3ED82CDCD197004122F9 /* Build configuration list for PBXProject "LocalAndRemoteSignature" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC9C3ED42CDCD197004122F9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AC9C3EDE2CDCD197004122F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC9C3EDC2CDCD197004122F9 /* LocalAndRemoteSignature */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC9C3EDB2CDCD197004122F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B91CFBF6983874FF4F5AA26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LocalAndRemoteSignature-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		692E3F05722A7F039D206B6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LocalAndRemoteSignature/Pods-LocalAndRemoteSignature-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LocalAndRemoteSignature/Pods-LocalAndRemoteSignature-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LocalAndRemoteSignature/Pods-LocalAndRemoteSignature-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		959CA78EC436927150CC4210 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LocalAndRemoteSignature/Pods-LocalAndRemoteSignature-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LocalAndRemoteSignature/Pods-LocalAndRemoteSignature-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LocalAndRemoteSignature/Pods-LocalAndRemoteSignature-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC9C3ED92CDCD197004122F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AC9C3EE92CDCD198004122F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC9C3EEA2CDCD198004122F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC9C3EEC2CDCD198004122F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8CA7B299589F10BF6073D10 /* Pods-LocalAndRemoteSignature.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LocalAndRemoteSignature/Preview Content\"";
+				DEVELOPMENT_TEAM = R4V4NUQ9JG;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocalAndRemoteSignature/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LocalAndRemoteSignature.LocalAndRemoteSignature;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC9C3EED2CDCD198004122F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17B7B502F343D73838B5CE7F /* Pods-LocalAndRemoteSignature.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LocalAndRemoteSignature/Preview Content\"";
+				DEVELOPMENT_TEAM = R4V4NUQ9JG;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocalAndRemoteSignature/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LocalAndRemoteSignature.LocalAndRemoteSignature;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC9C3ED82CDCD197004122F9 /* Build configuration list for PBXProject "LocalAndRemoteSignature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC9C3EE92CDCD198004122F9 /* Debug */,
+				AC9C3EEA2CDCD198004122F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC9C3EEB2CDCD198004122F9 /* Build configuration list for PBXNativeTarget "LocalAndRemoteSignature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC9C3EEC2CDCD198004122F9 /* Debug */,
+				AC9C3EED2CDCD198004122F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC9C3ED52CDCD197004122F9 /* Project object */;
+}
