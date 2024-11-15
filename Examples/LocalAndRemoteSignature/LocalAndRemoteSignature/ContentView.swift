@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  DigitalSignage
+//  LocalAndRemoteSignature
 //
 //  Created by Giovanni Trezzi on 13/11/24.
 //
@@ -147,7 +147,7 @@ struct ContentView: View {
 
                                 ButtonView(action: {
 
-                                    ENMobileSDK.shared?.showListAlert(AlertList(list: [ENDocum(name: "1-mandatory", url: Bundle.main.url(forResource: "1-mandatory", withExtension: "pdf")?.absoluteString ?? "")]) { document in
+                                    ENMobileSDK.shared?.showListAlert(AlertList(list: [ENDocum(name: "1-mandatory-1-optional-adobe", url: Bundle.main.url(forResource: "1-mandatory-1-optional-adobe", withExtension: "pdf")?.absoluteString ?? "")]) { document in
 
                                         isLoading = true
 

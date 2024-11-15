@@ -1,6 +1,6 @@
 //
 //  Configuration.swift
-//  DigitalSignage
+//  LocalAndRemoteSignature
 //
 //  Created by Giovanni Trezzi on 13/11/24.
 //

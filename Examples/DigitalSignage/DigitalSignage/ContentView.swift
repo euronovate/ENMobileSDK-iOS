@@ -181,7 +181,7 @@ struct ContentView: View {
                                                                    ctaConfig:
                                                                     ENCTAConfig(component: .directlyOnDS(event: ENCTAEventType.easterEgg(numberOfTaps: 2)),
                                                                                 presentationType: .documentList(documents: [
-                                                                                    ("1 firma obbligatoria", "Documento monopagina e monofirma (bookmarks)", "1-mandatory")
+                                                                                    ("1 firma obbligatoria", "Documento monopagina e monofirma (bookmarks)", "1-mandatory-1-optional-adobe")
                                                                                 ].map { ENDocum(name: $0.2, url: Bundle.main.bundleURL.absoluteString) },
                                                                                                                 onSelection: { document in
                 ENMobileSDK.publish(model: document.name, toListenerToEvent: .viewLocalDocument)
@@ -234,7 +234,7 @@ struct ContentView: View {
                                                                    licenseCode: Configuration.digitalSignageLicenseCode,
                                                                    ctaConfig: .init(component: .directlyOnDS(event: ENCTAEventType.easterEgg(numberOfTaps: 2)),
                                                                                     presentationType: .documentList(documents: [
-                                                                                        ("1 firma obbligatoria", "Documento monopagina e monofirma (bookmarks)", "1-mandatory")
+                                                                                        ("1 firma obbligatoria", "Documento monopagina e monofirma (bookmarks)", "1-mandatory-1-optional-adobe")
                                                                                     ].map { ENDocum(name: $0.2, url: Bundle.main.bundleURL.absoluteString) },
                                                                                                                     onSelection: { document in
                 ENMobileSDK.publish(model: document.name, toListenerToEvent: .viewLocalDocument)

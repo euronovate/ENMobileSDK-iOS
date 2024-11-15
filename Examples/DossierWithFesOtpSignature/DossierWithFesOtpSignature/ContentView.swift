@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  DigitalSignage
+//  DossierWithFesOtpSignature
 //
 //  Created by Giovanni Trezzi on 07/11/24.
 //

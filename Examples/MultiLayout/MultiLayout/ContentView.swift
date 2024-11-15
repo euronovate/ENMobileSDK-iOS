@@ -165,7 +165,7 @@ struct ContentView: View {
                             ButtonView(action: {
 
                                 isLoading = true
-                                let document = ENDocum(name: "1-mandatory", url: Bundle.main.url(forResource: "1-mandatory", withExtension: "pdf")?.absoluteString ?? "")
+                                let document = ENDocum(name: "1-mandatory-1-optional-adobe", url: Bundle.main.url(forResource: "1-mandatory-1-optional-adobe", withExtension: "pdf")?.absoluteString ?? "")
                                 ENMobileSDK.publish(model: document, toListenerToEvent: .signLocalDocument(document: document))
                                 isLoading = false
 
