@@ -1,5 +1,12 @@
 # Changelog
 
+## v 1.3.9
+
+- fix ENSignatureContentMode.ignoreFieldRatio/keepFieldRatio behaviour
+- add parameter ENPdfMiddlewareConfig.disableBackButtonWhenSignaturesCompleted
+- add parameter ENSignatureBoxConfig.minBioPackagesToAllowConfirmation
+- new ENSignatureBoxType.layout3
+
 ## v 1.3.8
 
 - implementation of FES with OTP signature

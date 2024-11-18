@@ -1,6 +1,6 @@
 ## ENAuth
 
-![](https://badgen.net/badge/stable/1.3.8/blue)
+![](https://badgen.net/badge/stable/1.3.9/blue)
 
 `ENAuth` is a fundamental class used to activate and checking license of each submodules. You can configure ENAuth in two ways: ***with jwt*** for example to use in offline mode
 

@@ -1,7 +1,5 @@
 # ENMobileSDK
 
-![](https://badgen.net/badge/License/Apache%202.0/blue)
-
 ### THIS SOFTWARE REQUIRES A LICENSE TO WORK.
 
 FOR ANY INFORMATION ABOUT, CONTACT US TO [customer[dot]sales[at]euronovate[dot]com](mailto:customer.sales@euronovate.com)

@@ -1,10 +1,10 @@
 ## ENPDFMiddleware
 
-![](https://badgen.net/badge/stable/1.3.8/blue)
+![](https://badgen.net/badge/stable/1.3.9/blue)
 
 ## COCOAPODS
 
-Add `pod 'ENPDFMiddleware', '1.3.8'` to your **PodFile**
+Add `pod 'ENPDFMiddleware', '1.3.9'` to your **PodFile**
 
 ## Basic usage
 
@@ -16,9 +16,14 @@ This struct has 2 different parameters:
 ```swift
 public let closeDocumentStatusOnConfirm: Bool
 public let abortDocumentStatusOnCancel: Bool
+public let disableBackButtonWhenSignaturesCompleted: Bool = false,
 ```
 
-If one of these variable is set to true, after a complete signature will be called a SoftServer endpoint to update document status.
+* `closeDocumentStatusOnConfirm` if it's true, after a tap on "close" document button the viewer calls softserver's `updateDocumentStatus` with status **CLOSE**
+
+* `abortDocumentStatusOnCancel` if it's true after, a tap on "abort/cancel" document button the viewer calls softserver's  `updateDocumentStatus` with status **ABORTED**
+
+* `disableBackButtonWhenSignaturesCompleted` set this flag to true if the "abort/cancel" button should be disabled when all the signatures are done for the current document.
 
 Depending on the pdf source, you can call:
 

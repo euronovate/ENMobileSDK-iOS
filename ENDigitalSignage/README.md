@@ -1,10 +1,10 @@
 ## ENDigitalSignage
 
-![](https://badgen.net/badge/stable/1.3.8/blue)
+![](https://badgen.net/badge/stable/1.3.9/blue)
 
 ## COCOAPODS
 
-Add `pod 'ENDigitalSignage', '1.3.8'` to your **PodFile**
+Add `pod 'ENDigitalSignage', '1.3.9'` to your **PodFile**
 
 It's a blackbox system to show a media slideshow based on a server-oriented media sync. When connected, it downloads every playlist offline.
 
