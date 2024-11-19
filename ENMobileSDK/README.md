@@ -1,6 +1,6 @@
 ## ENMobileSDK (conventionally ENCore)
 
-![](https://badgen.net/badge/stable/1.3.9/blue)
+![](https://badgen.net/badge/stable/1.3.10/blue)
 
 It's the core module. This module is included in every submodule, and keeps common functions to avoid circular dependencies between them. So it's not necessary to add to every module.
 
@@ -21,7 +21,7 @@ It's the core module. This module is included in every submodule, and keeps comm
 
 ## COCOAPODS
 
-Add `pod 'ENMobileSDK', '1.3.9'` to your **PodFile**
+Add `pod 'ENMobileSDK', '1.3.10'` to your **PodFile**
 
 ## Basic usage
 

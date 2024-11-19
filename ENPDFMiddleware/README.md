@@ -1,10 +1,10 @@
 ## ENPDFMiddleware
 
-![](https://badgen.net/badge/stable/1.3.9/blue)
+![](https://badgen.net/badge/stable/1.3.10/blue)
 
 ## COCOAPODS
 
-Add `pod 'ENPDFMiddleware', '1.3.9'` to your **PodFile**
+Add `pod 'ENPDFMiddleware', '1.3.10'` to your **PodFile**
 
 ## Basic usage
 

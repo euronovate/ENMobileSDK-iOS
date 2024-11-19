@@ -1,5 +1,10 @@
 # Changelog
 
+## v 1.3.10
+
+- ENPresenter: updated presentation layer to 1.5.24
+
+
 ## v 1.3.9
 
 - fix ENSignatureContentMode.ignoreFieldRatio/keepFieldRatio behaviour
