@@ -266,7 +266,7 @@ struct ContentView: View {
                             Task {
 
                                 isLoading = true
-                                ENMobileSDK.publish(model: document.guid, toListenerToEvent: .signDocument(guid: document.guid, watermarkHeight: nil, watermarkOrderedValues: nil, forceSignatureType: .fes))
+                                ENMobileSDK.publish(model: document.guid, toListenerToEvent: .signDocument(guid: document.guid, watermarkHeight: nil, watermarkOrderedValues: nil, forcedSignatureMode: .otpByDocumentGuid()))
                                 isLoading = false
                             }
 

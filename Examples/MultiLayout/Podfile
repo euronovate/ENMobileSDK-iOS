@@ -1,14 +1,14 @@
-platform :ios, '14.0'
+platform :ios, '14.5'
 source 'https://github.com/euronovate/euronovate-pods.git'
 source 'https://cdn.cocoapods.org/'
 
 target 'MultiLayout' do
   use_frameworks!
-  pod 'ENDigitalSignage', '1.3.9'
-  pod 'ENPDFMiddleware', '1.3.9'
-  pod 'ENViewer', '1.3.9'
-  pod 'ENSignatureBox', '1.3.9'
-  pod 'ENBioLibrary', '1.3.9'  
+  pod 'ENDigitalSignage', '1.3.11'
+  pod 'ENPDFMiddleware', '1.3.11'
+  pod 'ENViewer', '1.3.11'
+  pod 'ENSignatureBox', '1.3.11'
+  pod 'ENBioLibrary', '1.3.11' 
 end
 
 # Xcode 14.3 breaks pods with deployment target below iOS 11

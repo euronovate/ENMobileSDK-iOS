@@ -1,10 +1,10 @@
 ## ENSoftServer
 
-![](https://badgen.net/badge/stable/1.3.10/blue)
+![](https://badgen.net/badge/stable/1.3.11/blue)
 
 ## COCOAPODS
 
-Add `pod 'ENSoftServer', '1.3.10'` to your **PodFile**
+Add `pod 'ENSoftServer', '1.3.11'` to your **PodFile**
 
 Communication between SDK and SoftServer webserver.
 

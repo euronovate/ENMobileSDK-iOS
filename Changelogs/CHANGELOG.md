@@ -1,5 +1,12 @@
 # Changelog
 
+## v 1.3.11
+
+- increase min iOS version to 14.5
+- remove DocumentSignatureType introduced in 1.3.5
+- refactor SignatureMode now used for both default signature mode and forced signature mode
+- fix BlueRSA dependency to work with Xcode 16
+
 ## v 1.3.10
 
 - ENPresenter: updated presentation layer to 1.5.24

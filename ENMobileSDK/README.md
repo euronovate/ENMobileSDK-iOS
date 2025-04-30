@@ -1,6 +1,6 @@
 ## ENMobileSDK (conventionally ENCore)
 
-![](https://badgen.net/badge/stable/1.3.10/blue)
+![](https://badgen.net/badge/stable/1.3.11/blue)
 
 It's the core module. This module is included in every submodule, and keeps common functions to avoid circular dependencies between them. So it's not necessary to add to every module.
 
@@ -21,7 +21,7 @@ It's the core module. This module is included in every submodule, and keeps comm
 
 ## COCOAPODS
 
-Add `pod 'ENMobileSDK', '1.3.10'` to your **PodFile**
+Add `pod 'ENMobileSDK', '1.3.11'` to your **PodFile**
 
 ## Basic usage
 
@@ -160,7 +160,8 @@ ENMobileSDK.shared?.softServer?.findDocumentsInDossier(dossierGuid:  "GUID")
 
 ```swift
 public enum SignatureMode: Equatable, Hashable {
-    case graphometric
+    case graphometricFEA
+    case graphometricFES
     case otpByDocumentGuid(numberOfDigits: Int = 4, defaultHiddenDigits: Bool = true)
 
 	...
@@ -456,8 +457,8 @@ public enum ENMobileSDKEvent: String {
     case canConfirmDocument
     case disableConfirmDocument
     case didSignDocument(documentGuid: String? = nil, signatureName: String? = nil, signatureImage: UIImage? = nil)
-    case signDocument(guid: String? = nil, watermarkHeight: CGFloat? = nil, watermarkOrderedValues: [String]? = nil, forceSignatureType: DocumentSignatureType? = nil)
-    case signLocalDocument(document: ENDocum? = nil, watermarkHeight: CGFloat? = nil, watermarkOrderedValues: [String]? = nil, forceSignatureType: DocumentSignatureType? = nil)
+    case signDocument(guid: String? = nil, watermarkHeight: CGFloat? = nil, watermarkOrderedValues: [String]? = nil, forceSignatureMode: SignatureMode? = nil)
+    case signLocalDocument(document: ENDocum? = nil, watermarkHeight: CGFloat? = nil, watermarkOrderedValues: [String]? = nil, forceSignatureMode: SignatureMode? = nil)
     case abortedDocument
     case closedDocument(guid: String? = nil)
     case cancelledDocument

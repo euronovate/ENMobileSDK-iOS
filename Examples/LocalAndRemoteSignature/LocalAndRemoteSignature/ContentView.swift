@@ -265,7 +265,7 @@ struct ContentView: View {
                     keepScreenAlwaysOn: false,
                     considerAllSignatureFieldCharacters: true,
                     appVersion: Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "-",
-                    defaultSignatureMode: .graphometric
+                    defaultSignatureMode: .graphometricFEA
                 )
             )
             .with(customTheme: DefaultTheme())
